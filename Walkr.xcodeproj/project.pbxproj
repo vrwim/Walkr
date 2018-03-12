@@ -14,6 +14,9 @@
 		2B61526A2056F3A4004780C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6152682056F3A4004780C5 /* LaunchScreen.storyboard */; };
 		2B6152752056F3A6004780C5 /* WalkrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6152742056F3A6004780C5 /* WalkrTests.swift */; };
 		2B6152802056F3A6004780C5 /* WalkrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B61527F2056F3A6004780C5 /* WalkrUITests.swift */; };
+		7315A5A49DD7BEE75F76ED05 /* Pods_WalkrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D304F0AB3DC0806FB997DC54 /* Pods_WalkrUITests.framework */; };
+		A85547E6AD79C3E205B46CB1 /* Pods_Walkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD15016778BA63BA3BA40B8 /* Pods_Walkr.framework */; };
+		DAD5EC0452373B01032AB5C8 /* Pods_WalkrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0604FF88A12D759107574F /* Pods_WalkrTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		2B61527B2056F3A6004780C5 /* WalkrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B61527F2056F3A6004780C5 /* WalkrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkrUITests.swift; sourceTree = "<group>"; };
 		2B6152812056F3A6004780C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		431004E0DE9510D4AD99FFE1 /* Pods-WalkrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalkrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalkrTests/Pods-WalkrTests.release.xcconfig"; sourceTree = "<group>"; };
+		4AC0AD21F32CBC4F62C33E88 /* Pods-WalkrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalkrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WalkrUITests/Pods-WalkrUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4C0604FF88A12D759107574F /* Pods_WalkrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalkrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614269BF53C2270E5B6FDF91 /* Pods-Walkr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Walkr/Pods-Walkr.release.xcconfig"; sourceTree = "<group>"; };
+		7F38C07AF7E87C4D9752B3A0 /* Pods-Walkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Walkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Walkr/Pods-Walkr.debug.xcconfig"; sourceTree = "<group>"; };
+		9DD15016778BA63BA3BA40B8 /* Pods_Walkr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Walkr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C166B18D527A01A405434AEF /* Pods-WalkrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalkrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalkrUITests/Pods-WalkrUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D304F0AB3DC0806FB997DC54 /* Pods_WalkrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalkrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE45B6739AEBEC942F67BDD2 /* Pods-WalkrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalkrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WalkrTests/Pods-WalkrTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85547E6AD79C3E205B46CB1 /* Pods_Walkr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD5EC0452373B01032AB5C8 /* Pods_WalkrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7315A5A49DD7BEE75F76ED05 /* Pods_WalkrUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16625A5FFA0FD76E580EE31D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DD15016778BA63BA3BA40B8 /* Pods_Walkr.framework */,
+				4C0604FF88A12D759107574F /* Pods_WalkrTests.framework */,
+				D304F0AB3DC0806FB997DC54 /* Pods_WalkrUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2B6152532056F39C004780C5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				2B6152732056F3A5004780C5 /* WalkrTests */,
 				2B61527E2056F3A6004780C5 /* WalkrUITests */,
 				2B61525D2056F39F004780C5 /* Products */,
+				80F001BC1919A19A53953A03 /* Pods */,
+				16625A5FFA0FD76E580EE31D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = WalkrUITests;
 			sourceTree = "<group>";
 		};
+		80F001BC1919A19A53953A03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F38C07AF7E87C4D9752B3A0 /* Pods-Walkr.debug.xcconfig */,
+				614269BF53C2270E5B6FDF91 /* Pods-Walkr.release.xcconfig */,
+				DE45B6739AEBEC942F67BDD2 /* Pods-WalkrTests.debug.xcconfig */,
+				431004E0DE9510D4AD99FFE1 /* Pods-WalkrTests.release.xcconfig */,
+				C166B18D527A01A405434AEF /* Pods-WalkrUITests.debug.xcconfig */,
+				4AC0AD21F32CBC4F62C33E88 /* Pods-WalkrUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B6152842056F3A7004780C5 /* Build configuration list for PBXNativeTarget "Walkr" */;
 			buildPhases = (
+				53B113E89ADCEA23C22928F0 /* [CP] Check Pods Manifest.lock */,
 				2B6152582056F39E004780C5 /* Sources */,
 				2B6152592056F39E004780C5 /* Frameworks */,
 				2B61525A2056F39E004780C5 /* Resources */,
+				3977CA493ED8148C944C40E3 /* [CP] Embed Pods Frameworks */,
+				FE54589EE4E5A9EA37308B7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B6152872056F3A7004780C5 /* Build configuration list for PBXNativeTarget "WalkrTests" */;
 			buildPhases = (
+				6C842C04BB7DEAA382F06A19 /* [CP] Check Pods Manifest.lock */,
 				2B61526C2056F3A5004780C5 /* Sources */,
 				2B61526D2056F3A5004780C5 /* Frameworks */,
 				2B61526E2056F3A5004780C5 /* Resources */,
+				DED97B235636291DE3344BB9 /* [CP] Embed Pods Frameworks */,
+				F34A2345CED987F4BE6B1832 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B61528A2056F3A7004780C5 /* Build configuration list for PBXNativeTarget "WalkrUITests" */;
 			buildPhases = (
+				9FB8ECBBCB08F5F71EC0D170 /* [CP] Check Pods Manifest.lock */,
 				2B6152772056F3A6004780C5 /* Sources */,
 				2B6152782056F3A6004780C5 /* Frameworks */,
 				2B6152792056F3A6004780C5 /* Resources */,
+				99824337E06F2935C6BC64D2 /* [CP] Embed Pods Frameworks */,
+				97E8EC4B891ECDD248C96DBA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3977CA493ED8148C944C40E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Walkr/Pods-Walkr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ALCameraViewController/ALCameraViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALCameraViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Walkr/Pods-Walkr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53B113E89ADCEA23C22928F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Walkr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C842C04BB7DEAA382F06A19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalkrTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97E8EC4B891ECDD248C96DBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalkrUITests/Pods-WalkrUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99824337E06F2935C6BC64D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalkrUITests/Pods-WalkrUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB8ECBBCB08F5F71EC0D170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalkrUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED97B235636291DE3344BB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalkrTests/Pods-WalkrTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34A2345CED987F4BE6B1832 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WalkrTests/Pods-WalkrTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE54589EE4E5A9EA37308B7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Walkr/Pods-Walkr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B6152582056F39E004780C5 /* Sources */ = {
@@ -424,6 +623,7 @@
 		};
 		2B6152852056F3A7004780C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F38C07AF7E87C4D9752B3A0 /* Pods-Walkr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -441,6 +641,7 @@
 		};
 		2B6152862056F3A7004780C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614269BF53C2270E5B6FDF91 /* Pods-Walkr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -458,6 +659,7 @@
 		};
 		2B6152882056F3A7004780C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE45B6739AEBEC942F67BDD2 /* Pods-WalkrTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,6 +676,7 @@
 		};
 		2B6152892056F3A7004780C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431004E0DE9510D4AD99FFE1 /* Pods-WalkrTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +693,7 @@
 		};
 		2B61528B2056F3A7004780C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C166B18D527A01A405434AEF /* Pods-WalkrUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +709,7 @@
 		};
 		2B61528C2056F3A7004780C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC0AD21F32CBC4F62C33E88 /* Pods-WalkrUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
