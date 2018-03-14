@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B33012E20571EF40014C8AE /* MapOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B33012D20571EF40014C8AE /* MapOverlayViewController.swift */; };
+		2B330130205722460014C8AE /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B33012F205722460014C8AE /* ImageOverlay.swift */; };
 		2B6152602056F3A3004780C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B61525F2056F3A2004780C5 /* AppDelegate.swift */; };
 		2B6152622056F3A3004780C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6152612056F3A3004780C5 /* ViewController.swift */; };
 		2B6152652056F3A3004780C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6152632056F3A3004780C5 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B33012D20571EF40014C8AE /* MapOverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlayViewController.swift; sourceTree = "<group>"; };
+		2B33012F205722460014C8AE /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
 		2B61525C2056F39F004780C5 /* Walkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B61525F2056F3A2004780C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B6152612056F3A3004780C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				2B6152662056F3A4004780C5 /* Assets.xcassets */,
 				2B6152682056F3A4004780C5 /* LaunchScreen.storyboard */,
 				2B61526B2056F3A5004780C5 /* Info.plist */,
+				2B33012D20571EF40014C8AE /* MapOverlayViewController.swift */,
+				2B33012F205722460014C8AE /* ImageOverlay.swift */,
 			);
 			path = Walkr;
 			sourceTree = "<group>";
@@ -458,7 +464,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B33012E20571EF40014C8AE /* MapOverlayViewController.swift in Sources */,
 				2B6152622056F3A3004780C5 /* ViewController.swift in Sources */,
+				2B330130205722460014C8AE /* ImageOverlay.swift in Sources */,
 				2B6152602056F3A3004780C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,10 +636,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BP877E6XHB;
 				INFOPLIST_FILE = Walkr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vrwim.Walkr;
+				PRODUCT_BUNDLE_IDENTIFIER = be.bazookas.Walkr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -646,10 +654,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BP877E6XHB;
 				INFOPLIST_FILE = Walkr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vrwim.Walkr;
+				PRODUCT_BUNDLE_IDENTIFIER = be.bazookas.Walkr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
