@@ -21,17 +21,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EGl-8X-mpA">
-                                <rect key="frame" x="47" y="340.5" width="281" height="50.5"/>
+                                <rect key="frame" x="0.0" y="351.5" width="0.0" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iI-uI-cuV">
-                                        <rect key="frame" x="0.0" y="0.0" width="281" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uitleg.  Klik op de knop om verder te gaan." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iI-uI-cuV">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3i-OC-pJi">
-                                        <rect key="frame" x="0.0" y="20.5" width="281" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                        <state key="normal" title="Pick an image"/>
                                         <connections>
                                             <action selector="pickImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="k3c-3G-rUz"/>
                                         </connections>
@@ -66,14 +65,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="myz-ol-CFL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="gn4-YE-eDG"/>
+                                </constraints>
                             </imageView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="03h-NK-axU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd1-vR-JmA">
-                                <rect key="frame" x="309" y="617" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="317" y="617" width="38" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneTapped" destination="t5y-JF-Glz" eventType="touchUpInside" id="Psy-TT-Z7n"/>
                                 </connections>
@@ -82,21 +85,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="gd1-vR-JmA" secondAttribute="trailing" constant="20" id="0m7-cm-Vrf"/>
-                            <constraint firstItem="03h-NK-axU" firstAttribute="bottom" secondItem="myz-ol-CFL" secondAttribute="bottom" id="58J-jh-CHI"/>
-                            <constraint firstItem="myz-ol-CFL" firstAttribute="top" secondItem="kM5-bk-ZEL" secondAttribute="top" id="Iwy-NS-td5"/>
                             <constraint firstAttribute="trailing" secondItem="myz-ol-CFL" secondAttribute="trailing" id="Jwx-K3-qVp"/>
-                            <constraint firstItem="03h-NK-axU" firstAttribute="trailing" secondItem="myz-ol-CFL" secondAttribute="trailing" id="Sjt-Er-jOL"/>
-                            <constraint firstAttribute="bottom" secondItem="myz-ol-CFL" secondAttribute="bottom" id="dnb-WN-OTo"/>
+                            <constraint firstItem="03h-NK-axU" firstAttribute="top" secondItem="kM5-bk-ZEL" secondAttribute="top" id="bTS-2N-x9P"/>
+                            <constraint firstAttribute="bottom" secondItem="03h-NK-axU" secondAttribute="bottom" id="bfY-ur-vdt"/>
+                            <constraint firstItem="myz-ol-CFL" firstAttribute="centerY" secondItem="3Vy-JK-TkA" secondAttribute="centerY" id="dQX-Kp-k2T"/>
                             <constraint firstItem="myz-ol-CFL" firstAttribute="leading" secondItem="kM5-bk-ZEL" secondAttribute="leading" id="g4f-5f-9uh"/>
                             <constraint firstAttribute="bottomMargin" secondItem="gd1-vR-JmA" secondAttribute="bottom" constant="20" id="h27-qY-JRJ"/>
-                            <constraint firstItem="03h-NK-axU" firstAttribute="top" secondItem="myz-ol-CFL" secondAttribute="top" id="hHA-OJ-D7e"/>
-                            <constraint firstItem="03h-NK-axU" firstAttribute="leading" secondItem="myz-ol-CFL" secondAttribute="leading" id="iMD-BJ-Odg"/>
+                            <constraint firstAttribute="trailing" secondItem="03h-NK-axU" secondAttribute="trailing" id="pbV-RG-3GG"/>
+                            <constraint firstItem="03h-NK-axU" firstAttribute="leading" secondItem="kM5-bk-ZEL" secondAttribute="leading" id="pmb-uj-0rb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Vy-JK-TkA"/>
                     </view>
                     <connections>
                         <outlet property="doneButton" destination="gd1-vR-JmA" id="wvp-QL-d8n"/>
                         <outlet property="imageView" destination="myz-ol-CFL" id="LKM-it-5hT"/>
+                        <outlet property="imageViewHeightConstraint" destination="gn4-YE-eDG" id="XXu-D7-Cxv"/>
                         <outlet property="mapView" destination="03h-NK-axU" id="DTj-UZ-aki"/>
                     </connections>
                 </viewController>

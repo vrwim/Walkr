@@ -8,6 +8,7 @@
 
 import UIKit
 import ALCameraViewController
+import CoreLocation
 
 class ViewController: UIViewController {
     
@@ -16,7 +17,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO copy
+		
+		// For use in foreground
+		CLLocationManager().requestWhenInUseAuthorization()
     }
     
     @IBAction func pickImage() {
@@ -34,4 +37,3 @@ class ViewController: UIViewController {
         present(cameraViewController, animated: true, completion: nil)
     }
 }
-
