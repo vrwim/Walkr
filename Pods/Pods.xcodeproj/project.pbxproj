@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		02B4716B66173A3BA64F573C50C6B83A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		1032A8240D83DE3BCDAC408EDE452BFE /* Pods-Walkr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A31F54F0157795A4B67440025FD5A592 /* Pods-Walkr-dummy.m */; };
-		107816379634AD3AED8934757C482D89 /* Pods-WalkrTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF54BFD362DBFAE476907AF6596CBE67 /* Pods-WalkrTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16699554CB1F7BEB38268736E89DD59E /* Pods-WalkrTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF54BFD362DBFAE476907AF6596CBE67 /* Pods-WalkrTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17980A7D4FFDA661EB7A2A7877957D1C /* ALCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE1ED3A3A260B0AF067C80F157AD8286 /* ALCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27B829DF1D6716888B84DD6795343A9E /* Pods-WalkrUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C06C32DAF08A66AFFBD30B4E880522F6 /* Pods-WalkrUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A79C8834FF93F1C75CA6AFB768A980A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		3579A5632C68ECB771284AE039E39705 /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B589E0B5C34AB44A5BA66A9BA77616D8 /* CameraViewControllerConstraint.swift */; };
 		3D6C21AD02196E09F5A1B30FD4C8C6EF /* Pods-Walkr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2781CD2C1173AC8D2BCA8085442AF8B /* Pods-Walkr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42F0D75E7DA383640BD4574C8D08CEF1 /* ALCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7DB5AE68F5BFBECC305F2B136D9636 /* ALCameraViewController-dummy.m */; };
@@ -23,17 +25,15 @@
 		55691B4946AE3E04672E63C66BC3604D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6D14A1BAC6785798F7DEC4AB1A0BC /* Utilities.swift */; };
 		5C1184CF84A07DF3F565A9E450FBCA62 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B54785FDFCB2444595F0B952EC260F /* UIViewExtensions.swift */; };
 		67032953D1DB30B26C861A3D2E02FE8B /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A966860F3873160D1A69A70A01C96 /* ImageFetcher.swift */; };
-		69DD9AAD1C7C9E5809AABACC11D29689 /* Pods-WalkrUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C06C32DAF08A66AFFBD30B4E880522F6 /* Pods-WalkrUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70609E062BB5C5F0E1F1C5FD29ED4CE5 /* Pods-WalkrUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C668A447D463C38BB8352069352D0E /* Pods-WalkrUITests-dummy.m */; };
-		749FAD67C93693D0496A175965469F02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		78229C724844A2F32DB2D05285CE515C /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0982662EFC165C2ED642CC0F9A9B20 /* ImageCell.swift */; };
-		8085F5A8EF0D7E4394F1CE3F0B0B019C /* Pods-WalkrTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FBA2D188BE13FBE0522CCC5EA658AE /* Pods-WalkrTests-dummy.m */; };
-		809116EF29BAD6B48445906A42A64A84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8B98F9CEA47AA323427201F83643B9E5 /* Pods-WalkrUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C668A447D463C38BB8352069352D0E /* Pods-WalkrUITests-dummy.m */; };
 		8FD3EBBBF1622F58ABCF8671CBCD3432 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A096EA71E98B3805BFE130CDEF7E0A4 /* ConfirmViewController.swift */; };
 		9159303811E1CF0D6FCE1B7C0BF0A26C /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B7C05E6B667EDA7F51FAE7C74EA596 /* ConfirmViewController.xib */; };
+		A6788DE3C67604BA1E804E50CA60AB55 /* Pods-WalkrTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FBA2D188BE13FBE0522CCC5EA658AE /* Pods-WalkrTests-dummy.m */; };
 		B097E8B525DDBE65C30DAF5458957FE8 /* CroppingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C425ECEA133AB085338FFDA52BE435 /* CroppingParameters.swift */; };
 		BD39EF4C7C9A9BDA97CABD4B34A7258E /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF972DD198F44BFC9C3029C070B639 /* CameraShot.swift */; };
 		C5AA50DCF34D3F018072C984EF18D366 /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC4A37CE493D34454BDCAF935359644 /* CropOverlay.swift */; };
+		C9644746C9C91563A1101E79C02E0132 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		CBF8C92C5692B682ECC8EF60FD304A19 /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833806795846050A744D9528F9F1B23F /* VolumeControl.swift */; };
 		CF011AF8E0AEC4435805CC095D647FA6 /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B8B4AC1D6501E848231F39804F2CA1 /* CameraViewAssets.xcassets */; };
 		DA68E34E7E7D39961D4462EDF798C9A7 /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF179F2BCBFAD22B9A339718E028E8 /* SingleImageFetcher.swift */; };
@@ -44,6 +44,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		81BEFBD0F8AD29E3DC605EEC1E6E9E98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF4466FB1CC2877DD0FCF215A964A9E;
+			remoteInfo = "Pods-Walkr";
+		};
+		B2357F4A680CABD18AC349393999D530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF4466FB1CC2877DD0FCF215A964A9E;
+			remoteInfo = "Pods-Walkr";
+		};
 		BC3A5B3BD8D2A5439E047D3CD4E51A99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -121,14 +135,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03A51A201BF9B2FFBEA633624A9A2458 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				809116EF29BAD6B48445906A42A64A84 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		18783CF14ED3F149631FC314BE0B95E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,11 +143,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42F787C3DADB253C2C71B2CFA488E41B /* Frameworks */ = {
+		2685CC0E0A36F9C4A490545DBFC0D5FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				749FAD67C93693D0496A175965469F02 /* Foundation.framework in Frameworks */,
+				2A79C8834FF93F1C75CA6AFB768A980A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +156,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B4716B66173A3BA64F573C50C6B83A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F763B2B52923C90DC876F54BA03F78C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9644746C9C91563A1101E79C02E0132 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +344,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4220C51041F9D8B3D217C3495769A9C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16699554CB1F7BEB38268736E89DD59E /* Pods-WalkrTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7802302CF2CCD6020691AC1AA9C07C68 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,25 +360,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4B0DE561DBFFCE5562A6DD217E9E304 /* Headers */ = {
+		B3C80053BE1A71A97270F5C7DFD8106A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				107816379634AD3AED8934757C482D89 /* Pods-WalkrTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0931FF265A4CE91C178C68F81B753E1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69DD9AAD1C7C9E5809AABACC11D29689 /* Pods-WalkrUITests-umbrella.h in Headers */,
+				27B829DF1D6716888B84DD6795343A9E /* Pods-WalkrUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		233DAAC5856A3A4E7C08A3E8CDCB73E5 /* Pods-WalkrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63299F31F4374E512FFC3CF130739464 /* Build configuration list for PBXNativeTarget "Pods-WalkrTests" */;
+			buildPhases = (
+				58D422291F08F6E937930ACA22745E3B /* Sources */,
+				F763B2B52923C90DC876F54BA03F78C0 /* Frameworks */,
+				4220C51041F9D8B3D217C3495769A9C8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				921833A195B32E170C824B6BCD7ED736 /* PBXTargetDependency */,
+			);
+			name = "Pods-WalkrTests";
+			productName = "Pods-WalkrTests";
+			productReference = CB3A645347C02FBB8B94A651898E3A9E /* Pods_WalkrTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5570ADD82640075EE63C4B974684196D /* ALCameraViewController */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C45949BC229DC75A6C527ED35205E062 /* Build configuration list for PBXNativeTarget "ALCameraViewController" */;
@@ -375,38 +407,22 @@
 			productReference = 76388E7353B37AFF10EE858870226DFC /* ALCameraViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DB4223E807645B1729E73535D8E1D190 /* Pods-WalkrUITests */ = {
+		B792BBBC2F5E6E55E127D0C6F3CFCD7F /* Pods-WalkrUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 517BFC7B1A593194F9F28C4C057A4955 /* Build configuration list for PBXNativeTarget "Pods-WalkrUITests" */;
+			buildConfigurationList = CB453A9CB182FBB7F1C832D3612CFFDE /* Build configuration list for PBXNativeTarget "Pods-WalkrUITests" */;
 			buildPhases = (
-				8421A8E9BD5E3DF0914205FC1B7AC6F8 /* Sources */,
-				42F787C3DADB253C2C71B2CFA488E41B /* Frameworks */,
-				D0931FF265A4CE91C178C68F81B753E1 /* Headers */,
+				9B715F59E3F707141471767B0F041913 /* Sources */,
+				2685CC0E0A36F9C4A490545DBFC0D5FE /* Frameworks */,
+				B3C80053BE1A71A97270F5C7DFD8106A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E095B7CA530C73EBBFF892C5F257CF6D /* PBXTargetDependency */,
 			);
 			name = "Pods-WalkrUITests";
 			productName = "Pods-WalkrUITests";
 			productReference = 43D9DDA4367FD126A7F285A97B78D084 /* Pods_WalkrUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F4DABD1867ACB39C8B5462025AC4B493 /* Pods-WalkrTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A237E74BCC4D81C2C9F18654084E3708 /* Build configuration list for PBXNativeTarget "Pods-WalkrTests" */;
-			buildPhases = (
-				81C2E2C4BE2F4ED1451479E46ACB486F /* Sources */,
-				03A51A201BF9B2FFBEA633624A9A2458 /* Frameworks */,
-				C4B0DE561DBFFCE5562A6DD217E9E304 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-WalkrTests";
-			productName = "Pods-WalkrTests";
-			productReference = CB3A645347C02FBB8B94A651898E3A9E /* Pods_WalkrTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FDF4466FB1CC2877DD0FCF215A964A9E /* Pods-Walkr */ = {
@@ -450,8 +466,8 @@
 			targets = (
 				5570ADD82640075EE63C4B974684196D /* ALCameraViewController */,
 				FDF4466FB1CC2877DD0FCF215A964A9E /* Pods-Walkr */,
-				F4DABD1867ACB39C8B5462025AC4B493 /* Pods-WalkrTests */,
-				DB4223E807645B1729E73535D8E1D190 /* Pods-WalkrUITests */,
+				233DAAC5856A3A4E7C08A3E8CDCB73E5 /* Pods-WalkrTests */,
+				B792BBBC2F5E6E55E127D0C6F3CFCD7F /* Pods-WalkrUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -475,6 +491,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1032A8240D83DE3BCDAC408EDE452BFE /* Pods-Walkr-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58D422291F08F6E937930ACA22745E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6788DE3C67604BA1E804E50CA60AB55 /* Pods-WalkrTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,19 +529,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81C2E2C4BE2F4ED1451479E46ACB486F /* Sources */ = {
+		9B715F59E3F707141471767B0F041913 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8085F5A8EF0D7E4394F1CE3F0B0B019C /* Pods-WalkrTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8421A8E9BD5E3DF0914205FC1B7AC6F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				70609E062BB5C5F0E1F1C5FD29ED4CE5 /* Pods-WalkrUITests-dummy.m in Sources */,
+				8B98F9CEA47AA323427201F83643B9E5 /* Pods-WalkrUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,13 +546,59 @@
 			target = 5570ADD82640075EE63C4B974684196D /* ALCameraViewController */;
 			targetProxy = BC3A5B3BD8D2A5439E047D3CD4E51A99 /* PBXContainerItemProxy */;
 		};
+		921833A195B32E170C824B6BCD7ED736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Walkr";
+			target = FDF4466FB1CC2877DD0FCF215A964A9E /* Pods-Walkr */;
+			targetProxy = 81BEFBD0F8AD29E3DC605EEC1E6E9E98 /* PBXContainerItemProxy */;
+		};
+		E095B7CA530C73EBBFF892C5F257CF6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Walkr";
+			target = FDF4466FB1CC2877DD0FCF215A964A9E /* Pods-Walkr */;
+			targetProxy = B2357F4A680CABD18AC349393999D530 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C4A69BBCD1FF679CA387559A162DAD1 /* Debug */ = {
+		07E089BAC40953A31485B4A122F93931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C337D4CB79A73201A124DDEDFC3B0E79 /* ALCameraViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALCameraViewController;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		188D9DC5BBB502BC859DA1D7F4E6BB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA684F56ECC9A4C08B1D7F871160465A /* Pods-WalkrTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -557,7 +619,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WalkrTests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,7 +628,42 @@
 			};
 			name = Debug;
 		};
-		323A24856F1A4871A780301AF5C02A2A /* Debug */ = {
+		2E5B0E5F71908FB0AAE09CDFBD547CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795495E933EDC3A4AA11577AF85774BD /* Pods-WalkrUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WalkrUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WalkrUITests/Pods-WalkrUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		30D948AE62C04225F8DEF8734A4C5A26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -598,6 +695,131 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4FCA9A1385B310CE71C050A997AFD3DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C337D4CB79A73201A124DDEDFC3B0E79 /* ALCameraViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALCameraViewController;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6883D1389BA157EFDD09956695A4C8BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE243FA18CD89DC2F9DD2B89929D4076 /* Pods-WalkrUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WalkrUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WalkrUITests/Pods-WalkrUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E88537B08ED4D6EB44DBA7BC8D56A35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -622,51 +844,17 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		6E7B8B3F2EAB90ED3BCE0F466EBD8C19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 795495E933EDC3A4AA11577AF85774BD /* Pods-WalkrUITests.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WalkrUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WalkrUITests/Pods-WalkrUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WalkrUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		818472D7A0864855D26788A7C2AD2B50 /* Debug */ = {
+		A2CFCBC4DD83B1A85CD9DEBB019D7107 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 64A1D1D5335FEEDD1DC52A9E774E55BE /* Pods-Walkr.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -687,7 +875,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Walkr;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -698,109 +886,11 @@
 			};
 			name = Debug;
 		};
-		94AF5B190FFFDB40D8D66E95BD382299 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAF19F7E2A22B09714A6464AA13A0C24 /* Pods-Walkr.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Walkr/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Walkr/Pods-Walkr.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Walkr;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		982B57C59171C2180CDF2BD0F1C719D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE243FA18CD89DC2F9DD2B89929D4076 /* Pods-WalkrUITests.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WalkrUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WalkrUITests/Pods-WalkrUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WalkrUITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9E3F36D457BE9614620635C55B55C6E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C337D4CB79A73201A124DDEDFC3B0E79 /* ALCameraViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
-				PRODUCT_NAME = ALCameraViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B4633322AABE3B66EC037910411997DD /* Release */ = {
+		C25D656BE5AAABA0C25C1303915B997F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B034BA75E24E3405EE403504E1CB8FCD /* Pods-WalkrTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -821,7 +911,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WalkrTests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -831,68 +921,12 @@
 			};
 			name = Release;
 		};
-		CA33F186435244FD0FD5B7325332656C /* Release */ = {
+		F419273F62282D804723D955BA9CA746 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF19F7E2A22B09714A6464AA13A0C24 /* Pods-Walkr.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		FB78E01FC2C805A3BFAA7344CC4FE3D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C337D4CB79A73201A124DDEDFC3B0E79 /* ALCameraViewController.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -902,18 +936,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Walkr/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
-				PRODUCT_NAME = ALCameraViewController;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Walkr/Pods-Walkr.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -927,26 +963,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				323A24856F1A4871A780301AF5C02A2A /* Debug */,
-				CA33F186435244FD0FD5B7325332656C /* Release */,
+				9E88537B08ED4D6EB44DBA7BC8D56A35 /* Debug */,
+				30D948AE62C04225F8DEF8734A4C5A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		517BFC7B1A593194F9F28C4C057A4955 /* Build configuration list for PBXNativeTarget "Pods-WalkrUITests" */ = {
+		63299F31F4374E512FFC3CF130739464 /* Build configuration list for PBXNativeTarget "Pods-WalkrTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				982B57C59171C2180CDF2BD0F1C719D1 /* Debug */,
-				6E7B8B3F2EAB90ED3BCE0F466EBD8C19 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A237E74BCC4D81C2C9F18654084E3708 /* Build configuration list for PBXNativeTarget "Pods-WalkrTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C4A69BBCD1FF679CA387559A162DAD1 /* Debug */,
-				B4633322AABE3B66EC037910411997DD /* Release */,
+				188D9DC5BBB502BC859DA1D7F4E6BB90 /* Debug */,
+				C25D656BE5AAABA0C25C1303915B997F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -954,8 +981,8 @@
 		A5A0D064DEBD747DA765A16546AC8A9B /* Build configuration list for PBXNativeTarget "Pods-Walkr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				818472D7A0864855D26788A7C2AD2B50 /* Debug */,
-				94AF5B190FFFDB40D8D66E95BD382299 /* Release */,
+				A2CFCBC4DD83B1A85CD9DEBB019D7107 /* Debug */,
+				F419273F62282D804723D955BA9CA746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -963,8 +990,17 @@
 		C45949BC229DC75A6C527ED35205E062 /* Build configuration list for PBXNativeTarget "ALCameraViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E3F36D457BE9614620635C55B55C6E4 /* Debug */,
-				FB78E01FC2C805A3BFAA7344CC4FE3D2 /* Release */,
+				4FCA9A1385B310CE71C050A997AFD3DC /* Debug */,
+				07E089BAC40953A31485B4A122F93931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB453A9CB182FBB7F1C832D3612CFFDE /* Build configuration list for PBXNativeTarget "Pods-WalkrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6883D1389BA157EFDD09956695A4C8BE /* Debug */,
+				2E5B0E5F71908FB0AAE09CDFBD547CEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,11 +14,13 @@ class ImageOverlay: NSObject, MKOverlay {
     let image: UIImage
     let boundingMapRect: MKMapRect
     let coordinate: CLLocationCoordinate2D
+	let rotation: CLLocationDirection
     
-    init(image: UIImage, rect: MKMapRect, center: CLLocationCoordinate2D) {
+	init(image: UIImage, rect: MKMapRect, center: CLLocationCoordinate2D, rotation: CLLocationDirection) {
         self.image = image
         self.boundingMapRect = rect
         self.coordinate = center
+		self.rotation = rotation
     }
     
 //    func canReplaceMapContent() -> Bool {
@@ -35,7 +37,7 @@ class ImageOverlayRenderer: MKOverlayRenderer {
         }
         
         let rect = self.rect(for: overlay.boundingMapRect)
-            
+		
         context.scaleBy(x: 1.0, y: -1.0)
         context.translateBy(x: 0.0, y: -rect.size.height)
         context.draw(overlay.image.cgImage!, in: rect)

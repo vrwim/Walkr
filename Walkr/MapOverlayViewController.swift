@@ -38,7 +38,7 @@ class MapOverlayViewController: UIViewController {
 			mapRect.size.height = mapRect.size.width * Double(imageAspectRatio)
 			mapRect.origin.y -= heightChange / 2
 			
-			mapView.add(ImageOverlay(image: image, rect: mapRect, center: mapView.centerCoordinate))
+			mapView.add(ImageOverlay(image: image, rect: mapRect, center: mapView.centerCoordinate, rotation: mapView.camera.heading))
 			
 			navigationItem.titleView = nil
 			
