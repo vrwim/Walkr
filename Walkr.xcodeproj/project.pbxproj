@@ -559,7 +559,7 @@
 				DEVELOPMENT_TEAM = HD4R2BUJUJ;
 				INFOPLIST_FILE = Walkr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = be.bazookas.Walkr;
+				PRODUCT_BUNDLE_IDENTIFIER = be.vrwim.walkr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -577,7 +577,7 @@
 				DEVELOPMENT_TEAM = HD4R2BUJUJ;
 				INFOPLIST_FILE = Walkr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = be.bazookas.Walkr;
+				PRODUCT_BUNDLE_IDENTIFIER = be.vrwim.walkr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
