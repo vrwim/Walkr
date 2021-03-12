@@ -37,7 +37,7 @@ class PhotoLibraryAuthorizer {
                 self.completion(nil)
             }
             break
-        case .denied, .restricted:
+        case .denied, .restricted, .limited:
             DispatchQueue.main.async {
                 self.onDeniedOrRestricted(completion: self.completion)
             }
