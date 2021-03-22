@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2B10497225FC1B45003366D6 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10497125FC1B45003366D6 /* Tests_iOS.swift */; };
-		2B10497D25FC1B45003366D6 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10497C25FC1B45003366D6 /* Tests_macOS.swift */; };
 		2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495625FC1B43003366D6 /* WalkrApp.swift */; };
-		2B10498025FC1B45003366D6 /* WalkrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495625FC1B43003366D6 /* WalkrApp.swift */; };
 		2B10498125FC1B45003366D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495725FC1B43003366D6 /* ContentView.swift */; };
-		2B10498225FC1B45003366D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495725FC1B43003366D6 /* ContentView.swift */; };
 		2B10498325FC1B45003366D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B10495825FC1B45003366D6 /* Assets.xcassets */; };
-		2B10498425FC1B45003366D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B10495825FC1B45003366D6 /* Assets.xcassets */; };
+		2B1049A725FC2146003366D6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1049A625FC2146003366D6 /* MapView.swift */; };
+		2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B342CD22601567D002963D6 /* SFSymbolsButton.swift */; };
+		2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6159B2600120C006125C0 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,13 +24,6 @@
 			remoteGlobalIDString = 2B10495C25FC1B45003366D6;
 			remoteInfo = "Walkr (iOS)";
 		};
-		2B10497925FC1B45003366D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2B10495125FC1B43003366D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2B10496425FC1B45003366D6;
-			remoteInfo = "Walkr (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -40,26 +32,16 @@
 		2B10495825FC1B45003366D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B10495D25FC1B45003366D6 /* Walkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B10496025FC1B45003366D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B10496525FC1B45003366D6 /* Walkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B10496725FC1B45003366D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B10496825FC1B45003366D6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		2B10496D25FC1B45003366D6 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B10497125FC1B45003366D6 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		2B10497325FC1B45003366D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B10497825FC1B45003366D6 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B10497C25FC1B45003366D6 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		2B10497E25FC1B45003366D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B1049A625FC2146003366D6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2B342CD22601567D002963D6 /* SFSymbolsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButton.swift; sourceTree = "<group>"; };
+		2BE6159B2600120C006125C0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2B10495A25FC1B45003366D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B10496225FC1B45003366D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,64 +55,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B10497525FC1B45003366D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2B10495025FC1B43003366D6 = {
 			isa = PBXGroup;
 			children = (
-				2B10495525FC1B43003366D6 /* Shared */,
-				2B10495F25FC1B45003366D6 /* iOS */,
-				2B10496625FC1B45003366D6 /* macOS */,
-				2B10497025FC1B45003366D6 /* Tests iOS */,
-				2B10497B25FC1B45003366D6 /* Tests macOS */,
-				2B10495E25FC1B45003366D6 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		2B10495525FC1B43003366D6 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
+				2B342CD126015662002963D6 /* Components */,
 				2B10495625FC1B43003366D6 /* WalkrApp.swift */,
 				2B10495725FC1B43003366D6 /* ContentView.swift */,
 				2B10495825FC1B45003366D6 /* Assets.xcassets */,
+				2B1049A625FC2146003366D6 /* MapView.swift */,
+				2BE6159B2600120C006125C0 /* ImagePicker.swift */,
+				2B10496025FC1B45003366D6 /* Info.plist */,
+				2B10497025FC1B45003366D6 /* Tests iOS */,
+				2B10495E25FC1B45003366D6 /* Products */,
 			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		2B10495E25FC1B45003366D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				2B10495D25FC1B45003366D6 /* Walkr.app */,
-				2B10496525FC1B45003366D6 /* Walkr.app */,
 				2B10496D25FC1B45003366D6 /* Tests iOS.xctest */,
-				2B10497825FC1B45003366D6 /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2B10495F25FC1B45003366D6 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				2B10496025FC1B45003366D6 /* Info.plist */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		2B10496625FC1B45003366D6 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				2B10496725FC1B45003366D6 /* Info.plist */,
-				2B10496825FC1B45003366D6 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		2B10497025FC1B45003366D6 /* Tests iOS */ = {
@@ -142,13 +91,12 @@
 			path = "Tests iOS";
 			sourceTree = "<group>";
 		};
-		2B10497B25FC1B45003366D6 /* Tests macOS */ = {
+		2B342CD126015662002963D6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2B10497C25FC1B45003366D6 /* Tests_macOS.swift */,
-				2B10497E25FC1B45003366D6 /* Info.plist */,
+				2B342CD22601567D002963D6 /* SFSymbolsButton.swift */,
 			);
-			path = "Tests macOS";
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,23 +119,6 @@
 			productReference = 2B10495D25FC1B45003366D6 /* Walkr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2B10496425FC1B45003366D6 /* Walkr (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2B10498A25FC1B45003366D6 /* Build configuration list for PBXNativeTarget "Walkr (macOS)" */;
-			buildPhases = (
-				2B10496125FC1B45003366D6 /* Sources */,
-				2B10496225FC1B45003366D6 /* Frameworks */,
-				2B10496325FC1B45003366D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Walkr (macOS)";
-			productName = "Walkr (macOS)";
-			productReference = 2B10496525FC1B45003366D6 /* Walkr.app */;
-			productType = "com.apple.product-type.application";
-		};
 		2B10496C25FC1B45003366D6 /* Tests iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B10498D25FC1B45003366D6 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
@@ -206,24 +137,6 @@
 			productReference = 2B10496D25FC1B45003366D6 /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		2B10497725FC1B45003366D6 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2B10499025FC1B45003366D6 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				2B10497425FC1B45003366D6 /* Sources */,
-				2B10497525FC1B45003366D6 /* Frameworks */,
-				2B10497625FC1B45003366D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2B10497A25FC1B45003366D6 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 2B10497825FC1B45003366D6 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,16 +149,9 @@
 					2B10495C25FC1B45003366D6 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					2B10496425FC1B45003366D6 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					2B10496C25FC1B45003366D6 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 2B10495C25FC1B45003366D6;
-					};
-					2B10497725FC1B45003366D6 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 2B10496425FC1B45003366D6;
 					};
 				};
 			};
@@ -263,9 +169,7 @@
 			projectRoot = "";
 			targets = (
 				2B10495C25FC1B45003366D6 /* Walkr (iOS) */,
-				2B10496425FC1B45003366D6 /* Walkr (macOS) */,
 				2B10496C25FC1B45003366D6 /* Tests iOS */,
-				2B10497725FC1B45003366D6 /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -279,22 +183,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B10496325FC1B45003366D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B10498425FC1B45003366D6 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2B10496B25FC1B45003366D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B10497625FC1B45003366D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,16 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B10498125FC1B45003366D6 /* ContentView.swift in Sources */,
+				2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */,
+				2B1049A725FC2146003366D6 /* MapView.swift in Sources */,
 				2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B10496125FC1B45003366D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B10498225FC1B45003366D6 /* ContentView.swift in Sources */,
-				2B10498025FC1B45003366D6 /* WalkrApp.swift in Sources */,
+				2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,14 +213,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B10497425FC1B45003366D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B10497D25FC1B45003366D6 /* Tests_macOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -345,11 +220,6 @@
 			isa = PBXTargetDependency;
 			target = 2B10495C25FC1B45003366D6 /* Walkr (iOS) */;
 			targetProxy = 2B10496E25FC1B45003366D6 /* PBXContainerItemProxy */;
-		};
-		2B10497A25FC1B45003366D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2B10496425FC1B45003366D6 /* Walkr (macOS) */;
-			targetProxy = 2B10497925FC1B45003366D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -473,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23DKY2SA2G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23DKY2SA2G;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,54 +377,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2B10498B25FC1B45003366D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 23DKY2SA2G;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.vrwim.Walkr;
-				PRODUCT_NAME = Walkr;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		2B10498C25FC1B45003366D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 23DKY2SA2G;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.vrwim.Walkr;
-				PRODUCT_NAME = Walkr;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -603,50 +425,6 @@
 			};
 			name = Release;
 		};
-		2B10499125FC1B45003366D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 23DKY2SA2G;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "br.vrwim.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Walkr (macOS)";
-			};
-			name = Debug;
-		};
-		2B10499225FC1B45003366D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 23DKY2SA2G;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "br.vrwim.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Walkr (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -668,29 +446,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B10498A25FC1B45003366D6 /* Build configuration list for PBXNativeTarget "Walkr (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B10498B25FC1B45003366D6 /* Debug */,
-				2B10498C25FC1B45003366D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2B10498D25FC1B45003366D6 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B10498E25FC1B45003366D6 /* Debug */,
 				2B10498F25FC1B45003366D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2B10499025FC1B45003366D6 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B10499125FC1B45003366D6 /* Debug */,
-				2B10499225FC1B45003366D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
