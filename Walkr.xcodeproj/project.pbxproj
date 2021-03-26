@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B06831B2608C3FC007849F2 /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B06831A2608C3FC007849F2 /* CustomMapView.swift */; };
+		2B06831F2608C5C1007849F2 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B06831E2608C5C1007849F2 /* ImageOverlay.swift */; };
 		2B10497225FC1B45003366D6 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10497125FC1B45003366D6 /* Tests_iOS.swift */; };
 		2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495625FC1B43003366D6 /* WalkrApp.swift */; };
 		2B10498125FC1B45003366D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495725FC1B43003366D6 /* ContentView.swift */; };
 		2B10498325FC1B45003366D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B10495825FC1B45003366D6 /* Assets.xcassets */; };
 		2B1049A725FC2146003366D6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1049A625FC2146003366D6 /* MapView.swift */; };
 		2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B342CD22601567D002963D6 /* SFSymbolsButton.swift */; };
+		2B75DF44260D04A800E1D046 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75DF43260D04A800E1D046 /* UIImage.swift */; };
 		2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6159B2600120C006125C0 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B06831A2608C3FC007849F2 /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		2B06831E2608C5C1007849F2 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
 		2B10495625FC1B43003366D6 /* WalkrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkrApp.swift; sourceTree = "<group>"; };
 		2B10495725FC1B43003366D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B10495825FC1B45003366D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +42,7 @@
 		2B10497325FC1B45003366D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B1049A625FC2146003366D6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2B342CD22601567D002963D6 /* SFSymbolsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButton.swift; sourceTree = "<group>"; };
+		2B75DF43260D04A800E1D046 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		2BE6159B2600120C006125C0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,9 +64,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0683152608A77F007849F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B06831E2608C5C1007849F2 /* ImageOverlay.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2B10495025FC1B43003366D6 = {
 			isa = PBXGroup;
 			children = (
+				2B75DF42260D049600E1D046 /* Extensions */,
+				2B0683152608A77F007849F2 /* Models */,
 				2B342CD126015662002963D6 /* Components */,
 				2B10495625FC1B43003366D6 /* WalkrApp.swift */,
 				2B10495725FC1B43003366D6 /* ContentView.swift */,
@@ -95,8 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				2B342CD22601567D002963D6 /* SFSymbolsButton.swift */,
+				2B06831A2608C3FC007849F2 /* CustomMapView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2B75DF42260D049600E1D046 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B75DF43260D04A800E1D046 /* UIImage.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B10498125FC1B45003366D6 /* ContentView.swift in Sources */,
+				2B75DF44260D04A800E1D046 /* UIImage.swift in Sources */,
 				2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */,
+				2B06831F2608C5C1007849F2 /* ImageOverlay.swift in Sources */,
 				2B1049A725FC2146003366D6 /* MapView.swift in Sources */,
 				2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */,
+				2B06831B2608C3FC007849F2 /* CustomMapView.swift in Sources */,
 				2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +377,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.vrwim.Walkr;
+				PRODUCT_BUNDLE_IDENTIFIER = be.vrwim.Walkr;
 				PRODUCT_NAME = Walkr;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -371,7 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.vrwim.Walkr;
+				PRODUCT_BUNDLE_IDENTIFIER = be.vrwim.Walkr;
 				PRODUCT_NAME = Walkr;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
