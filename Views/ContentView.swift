@@ -21,6 +21,7 @@ struct ContentView: View {
                 .padding(20)
             }
             .padding(20)
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

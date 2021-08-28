@@ -73,7 +73,7 @@ struct CustomMapView: UIViewRepresentable {
             
             context.scaleBy(x: 1.0, y: -1.0)
             context.translateBy(x: 0.0, y: -rect.size.height)
-            // TODO: rotation??
+            context.rotate(by: CGFloat(overlay.rotation))
             context.draw(overlay.image.cgImage!, in: rect)
         }
     }

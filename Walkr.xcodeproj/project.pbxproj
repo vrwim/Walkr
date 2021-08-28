@@ -16,6 +16,7 @@
 		2B1049A725FC2146003366D6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1049A625FC2146003366D6 /* MapView.swift */; };
 		2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B342CD22601567D002963D6 /* SFSymbolsButton.swift */; };
 		2B75DF44260D04A800E1D046 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75DF43260D04A800E1D046 /* UIImage.swift */; };
+		2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */; };
 		2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6159B2600120C006125C0 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		2B1049A625FC2146003366D6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		2B342CD22601567D002963D6 /* SFSymbolsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButton.swift; sourceTree = "<group>"; };
 		2B75DF43260D04A800E1D046 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPicturesView.swift; sourceTree = "<group>"; };
 		2BE6159B2600120C006125C0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,11 +80,9 @@
 				2B75DF42260D049600E1D046 /* Extensions */,
 				2B0683152608A77F007849F2 /* Models */,
 				2B342CD126015662002963D6 /* Components */,
+				2B75DF57260E92A800E1D046 /* Views */,
 				2B10495625FC1B43003366D6 /* WalkrApp.swift */,
-				2B10495725FC1B43003366D6 /* ContentView.swift */,
 				2B10495825FC1B45003366D6 /* Assets.xcassets */,
-				2B1049A625FC2146003366D6 /* MapView.swift */,
-				2BE6159B2600120C006125C0 /* ImagePicker.swift */,
 				2B10496025FC1B45003366D6 /* Info.plist */,
 				2B10497025FC1B45003366D6 /* Tests iOS */,
 				2B10495E25FC1B45003366D6 /* Products */,
@@ -110,6 +110,7 @@
 		2B342CD126015662002963D6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2BE6159B2600120C006125C0 /* ImagePicker.swift */,
 				2B342CD22601567D002963D6 /* SFSymbolsButton.swift */,
 				2B06831A2608C3FC007849F2 /* CustomMapView.swift */,
 			);
@@ -122,6 +123,16 @@
 				2B75DF43260D04A800E1D046 /* UIImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2B75DF57260E92A800E1D046 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B10495725FC1B43003366D6 /* ContentView.swift */,
+				2B1049A625FC2146003366D6 /* MapView.swift */,
+				2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 				2B06831F2608C5C1007849F2 /* ImageOverlay.swift in Sources */,
 				2B1049A725FC2146003366D6 /* MapView.swift in Sources */,
 				2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */,
+				2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */,
 				2B06831B2608C3FC007849F2 /* CustomMapView.swift in Sources */,
 				2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */,
 			);

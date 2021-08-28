@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIImage {
-
     static func fixedOrientation(for image: UIImage) -> UIImage? {
         
         guard image.imageOrientation != .up else {
