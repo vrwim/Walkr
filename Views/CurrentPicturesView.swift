@@ -16,9 +16,9 @@ struct CurrentPicturesView: View {
                     Image(uiImage: photo.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 40, height: 40)
+                        .frame(width: 80, height: 80)
                         .padding(4)
-                    VStack {
+                    VStack(alignment: .leading) {
                         HStack {
                             Text("Longitude:").bold()
                             Text("\(photo.coordinate.longitude)")
@@ -26,10 +26,6 @@ struct CurrentPicturesView: View {
                         HStack {
                             Text("Latitude:").bold()
                             Text("\(photo.coordinate.latitude)")
-                        }
-                        HStack {
-                            Text("Rotation:").bold()
-                            Text("\(photo.rotation)")
                         }
                     }
                     .font(.footnote)

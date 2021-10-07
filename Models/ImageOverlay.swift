@@ -16,7 +16,7 @@ class ImageOverlay: NSObject, MKOverlay {
     init(image: UIImage, rect: MKMapRect, rotation: CLLocationDirection) {
         self.image = UIImage.fixedOrientation(for: image) ?? image
         self.boundingMapRect = rect
-        self.coordinate = CLLocationCoordinate2D(latitude: rect.midX, longitude: rect.midY)
+        self.coordinate = rect.origin.coordinate
         self.rotation = rotation
     }
 }
