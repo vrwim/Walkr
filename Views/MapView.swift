@@ -15,6 +15,8 @@ struct MapView: View {
     @State var visibleMapRect = MKMapRect(origin: MKMapPoint(CLLocationCoordinate2D(latitude: 51, longitude: 3)), size: MKMapSize(width: 200_000, height: 200_000))
     @State var cameraHeading: CLLocationDirection = 0
     
+    @State var sizeWhenAdded: MKMapRect?
+    
     var body: some View {
         ZStack {
             if let image = image {
@@ -22,8 +24,11 @@ struct MapView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
-            CustomMapView(overlays: $photos, visibleMapRect: $visibleMapRect, cameraHeading: $cameraHeading)
-                .opacity(image == nil ? 1 : 0.5)
+            GeometryReader { geometry in
+                CustomMapView(overlays: $photos, visibleMapRect: $visibleMapRect, cameraHeading: $cameraHeading)
+                    .opacity(image == nil ? 1 : 0.5)
+                    .andPrint(geometry.size)
+            }
             VStack {
                 Spacer()
                 HStack(spacing: 20) {
@@ -47,17 +52,23 @@ struct MapView: View {
                             let mapAspectRatio = Double(visibleMapRect.size.height / visibleMapRect.size.width)
                             
                             var mapRect = visibleMapRect
+                            
                             if mapAspectRatio > imageAspectRatio {
+                                // Aspect ratio of map is bigger than aspect ratio of image (map is higher than the image), take away height from the rectangle
                                 let heightChange = mapRect.size.height - mapRect.size.width * imageAspectRatio
                                 mapRect.size.height = mapRect.size.width * imageAspectRatio
                                 mapRect.origin.y += heightChange / 2
                             } else {
+                                // Aspect ratio of map is smaller than aspect ratio of image (map is higher than the image), take away width from the rectangle
                                 let widthChange = mapRect.size.width - mapRect.size.height / imageAspectRatio
                                 mapRect.size.width = mapRect.size.height / imageAspectRatio
                                 mapRect.origin.x += widthChange / 2
                             }
                             
-                            photos.append(ImageOverlay(image: image, rect: mapRect, rotation: cameraHeading))
+                            photos.append(ImageOverlay(image: image, boundingMapRect: mapRect, rotation: cameraHeading))
+                            
+                            print("Rotated@\(Int(cameraHeading)), Size when added: \(visibleMapRect.size)")
+                            sizeWhenAdded = visibleMapRect
                             
                             self.image = nil
                         }, label: {
@@ -72,6 +83,13 @@ struct MapView: View {
         })
         .sheet(item: $pickingFrom) { item in
             ImagePicker(sourceType: item, selectedImage: $image)
+        }
+        .onChange(of: visibleMapRect) { value in
+            guard let sizeWhenAdded = sizeWhenAdded else {
+                print("Rotated@\(Int(cameraHeading))")
+                return
+            }
+            print("Rotated@\(Int(cameraHeading)), Size compared to add: \(sizeWhenAdded.width / visibleMapRect.width)")
         }
     }
 }

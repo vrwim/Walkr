@@ -17,6 +17,8 @@
 		2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B342CD22601567D002963D6 /* SFSymbolsButton.swift */; };
 		2B75DF44260D04A800E1D046 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75DF43260D04A800E1D046 /* UIImage.swift */; };
 		2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */; };
+		2BC35B0C26E7908400A261CE /* MKMapRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC35B0B26E7908400A261CE /* MKMapRect.swift */; };
+		2BC35B0E26E794D700A261CE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC35B0D26E794D700A261CE /* View.swift */; };
 		2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6159B2600120C006125C0 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		2B342CD22601567D002963D6 /* SFSymbolsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButton.swift; sourceTree = "<group>"; };
 		2B75DF43260D04A800E1D046 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPicturesView.swift; sourceTree = "<group>"; };
+		2BC35B0B26E7908400A261CE /* MKMapRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapRect.swift; sourceTree = "<group>"; };
+		2BC35B0D26E794D700A261CE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		2BE6159B2600120C006125C0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				2B75DF43260D04A800E1D046 /* UIImage.swift */,
+				2BC35B0B26E7908400A261CE /* MKMapRect.swift */,
+				2BC35B0D26E794D700A261CE /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,10 +243,12 @@
 				2B75DF44260D04A800E1D046 /* UIImage.swift in Sources */,
 				2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */,
 				2B06831F2608C5C1007849F2 /* ImageOverlay.swift in Sources */,
+				2BC35B0C26E7908400A261CE /* MKMapRect.swift in Sources */,
 				2B1049A725FC2146003366D6 /* MapView.swift in Sources */,
 				2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */,
 				2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */,
 				2B06831B2608C3FC007849F2 /* CustomMapView.swift in Sources */,
+				2BC35B0E26E794D700A261CE /* View.swift in Sources */,
 				2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

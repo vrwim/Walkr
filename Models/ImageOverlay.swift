@@ -13,10 +13,10 @@ class ImageOverlay: NSObject, MKOverlay {
     let coordinate: CLLocationCoordinate2D
     let rotation: CLLocationDirection
     
-    init(image: UIImage, rect: MKMapRect, rotation: CLLocationDirection) {
+    init(image: UIImage, boundingMapRect: MKMapRect, rotation: CLLocationDirection) {
         self.image = UIImage.fixedOrientation(for: image) ?? image
-        self.boundingMapRect = rect
-        self.coordinate = CLLocationCoordinate2D(latitude: rect.midX, longitude: rect.midY)
+        self.boundingMapRect = boundingMapRect
+        self.coordinate = CLLocationCoordinate2D(latitude: boundingMapRect.midX, longitude: boundingMapRect.midY)
         self.rotation = rotation
     }
 }
