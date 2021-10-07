@@ -15,9 +15,10 @@ struct CustomMapView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
+                
         mapView.showsUserLocation = true
+        mapView.isRotateEnabled = false
         
-        mapView.visibleMapRect = visibleMapRect
         mapView.camera.heading = cameraHeading
         
         mapView.delegate = context.coordinator
