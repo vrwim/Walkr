@@ -8,19 +8,18 @@
 import UIKit
 
 extension UIImage {
-    static func fixedOrientation(for image: UIImage) -> UIImage? {
-        
-        guard image.imageOrientation != .up else {
-            return image
+    func fixedOrientation() -> UIImage? {
+        guard imageOrientation != .up else {
+            return self
         }
         
-        let size = image.size
+        let size = size
         
-        let imageOrientation = image.imageOrientation
+        let imageOrientation = imageOrientation
         
         var transform: CGAffineTransform = .identity
 
-        switch image.imageOrientation {
+        switch imageOrientation {
         case .down, .downMirrored:
             transform = transform.translatedBy(x: size.width, y: size.height)
             transform = transform.rotated(by: CGFloat.pi)
@@ -50,7 +49,7 @@ extension UIImage {
             break
         }
         
-        guard var cgImage = image.cgImage else {
+        guard var cgImage = cgImage else {
             return nil
         }
         
@@ -82,5 +81,17 @@ extension UIImage {
         
         let uiImage = UIImage(cgImage: cgImage, scale: 1, orientation: .up)
         return uiImage
+    }
+    
+    func saveImage(key: String) {
+        guard let data = jpegData(compressionQuality: 0.5) else { return }
+        let encoded = try! PropertyListEncoder().encode(data)
+        UserDefaults.standard.set(encoded, forKey: key)
+    }
+
+    static func loadImage(key: String) -> UIImage? {
+         guard let data = UserDefaults.standard.data(forKey: key) else { return nil }
+         let decoded = try! PropertyListDecoder().decode(Data.self, from: data)
+         return UIImage(data: decoded)
     }
 }

@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct CurrentPicturesView: View {
-    @Binding var photos: [ImageOverlay]
+    @Binding var viewModel: MapViewModel
     var body: some View {
         Form {
-            ForEach(photos, id: \.self) { photo in
+            ForEach(viewModel.photos, id: \.self) { photo in
                 HStack {
                     Image(uiImage: photo.image)
                         .resizable()
@@ -27,9 +27,16 @@ struct CurrentPicturesView: View {
                             Text("Latitude:").bold()
                             Text("\(photo.coordinate.latitude)")
                         }
+                        HStack {
+                            Text("Size:").bold()
+                            Text("\(Int(photo.boundingMapRect.width))x\(Int(photo.boundingMapRect.height))")
+                        }
                     }
                     .font(.footnote)
                 }
+            }
+            .onDelete { index in
+                viewModel.removeImage(at: Int(index.first!))
             }
         }
     }
@@ -37,6 +44,6 @@ struct CurrentPicturesView: View {
 
 struct CurrentPicturesView_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentPicturesView(photos: .constant([]))
+        CurrentPicturesView(viewModel: .constant(MapViewModel()))
     }
 }

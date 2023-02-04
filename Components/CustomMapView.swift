@@ -11,16 +11,13 @@ import MapKit
 struct CustomMapView: UIViewRepresentable {
     @Binding var overlays: [ImageOverlay]
     @Binding var visibleMapRect: MKMapRect
-    @Binding var cameraHeading: CLLocationDirection
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
                 
         mapView.showsUserLocation = true
         mapView.isRotateEnabled = false
-        
-        mapView.camera.heading = cameraHeading
-        
+                
         mapView.delegate = context.coordinator
         return mapView
     }
@@ -56,7 +53,6 @@ struct CustomMapView: UIViewRepresentable {
         
         func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
             parent.visibleMapRect = mapView.visibleMapRect
-            parent.cameraHeading = mapView.camera.heading
         }
 
         init(_ parent: CustomMapView) {
@@ -74,7 +70,6 @@ struct CustomMapView: UIViewRepresentable {
             
             context.scaleBy(x: 1.0, y: -1.0)
             context.translateBy(x: 0.0, y: -rect.size.height)
-            context.rotate(by: CGFloat(overlay.rotation * Double.pi / 180))
             context.draw(overlay.image.cgImage!, in: rect)
         }
     }
