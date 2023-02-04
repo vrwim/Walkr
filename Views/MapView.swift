@@ -9,11 +9,11 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    /// The image currently aligning
     @State var image: UIImage?
     @State var pickingFrom: UIImagePickerController.SourceType?
-    @State var photos: [ImageOverlay] = []
+    @StateObject var viewModel = MapViewModel()
     @State var visibleMapRect = MKMapRect(origin: MKMapPoint(CLLocationCoordinate2D(latitude: 51, longitude: 3)), size: MKMapSize(width: 200_000, height: 200_000))
-    @State var cameraHeading: CLLocationDirection = 0
     
     var body: some View {
         ZStack {
@@ -22,7 +22,7 @@ struct MapView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
-            CustomMapView(overlays: $photos, visibleMapRect: $visibleMapRect, cameraHeading: $cameraHeading)
+            CustomMapView(overlays: $viewModel.photos, visibleMapRect: $visibleMapRect)
                 .opacity(image == nil ? 1 : 0.5)
             VStack {
                 Spacer()
@@ -57,7 +57,7 @@ struct MapView: View {
                                 mapRect.origin.x += widthChange / 2
                             }
                             
-                            photos.append(ImageOverlay(image: image, rect: mapRect, rotation: cameraHeading))
+                            viewModel.addImageOverlay(ImageOverlay(image: image, rect: mapRect))
                             
                             self.image = nil
                         }, label: {
@@ -67,7 +67,7 @@ struct MapView: View {
                 }.padding(20)
             }
         }
-        .navigationBarItems(trailing: NavigationLink(destination: CurrentPicturesView(photos: $photos)) {
+        .navigationBarItems(trailing: NavigationLink(destination: CurrentPicturesView(viewModel: viewModel)) {
             Text("List images")
         })
         .sheet(item: $pickingFrom) { item in
@@ -84,7 +84,7 @@ extension UIImagePickerController.SourceType: Identifiable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(image: nil, photos: [])
+        MapView(image: nil)
             .previewDevice("iPhone X")
     }
 }

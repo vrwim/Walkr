@@ -11,12 +11,14 @@
 		2B06831F2608C5C1007849F2 /* ImageOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B06831E2608C5C1007849F2 /* ImageOverlay.swift */; };
 		2B10497225FC1B45003366D6 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10497125FC1B45003366D6 /* Tests_iOS.swift */; };
 		2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495625FC1B43003366D6 /* WalkrApp.swift */; };
-		2B10498125FC1B45003366D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495725FC1B43003366D6 /* ContentView.swift */; };
+		2B10498125FC1B45003366D6 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B10495725FC1B43003366D6 /* IntroView.swift */; };
 		2B10498325FC1B45003366D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B10495825FC1B45003366D6 /* Assets.xcassets */; };
 		2B1049A725FC2146003366D6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1049A625FC2146003366D6 /* MapView.swift */; };
 		2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B342CD22601567D002963D6 /* SFSymbolsButton.swift */; };
 		2B75DF44260D04A800E1D046 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75DF43260D04A800E1D046 /* UIImage.swift */; };
 		2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */; };
+		2BA8974C298EA03A0072CE82 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8974B298EA03A0072CE82 /* MapViewModel.swift */; };
+		2BA8974E298ECC190072CE82 /* MKMapRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8974D298ECC190072CE82 /* MKMapRect.swift */; };
 		2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6159B2600120C006125C0 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +36,7 @@
 		2B06831A2608C3FC007849F2 /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
 		2B06831E2608C5C1007849F2 /* ImageOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlay.swift; sourceTree = "<group>"; };
 		2B10495625FC1B43003366D6 /* WalkrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkrApp.swift; sourceTree = "<group>"; };
-		2B10495725FC1B43003366D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B10495725FC1B43003366D6 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		2B10495825FC1B45003366D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B10495D25FC1B45003366D6 /* Walkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B10496025FC1B45003366D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		2B342CD22601567D002963D6 /* SFSymbolsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolsButton.swift; sourceTree = "<group>"; };
 		2B75DF43260D04A800E1D046 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPicturesView.swift; sourceTree = "<group>"; };
+		2BA8974B298EA03A0072CE82 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		2BA8974D298ECC190072CE82 /* MKMapRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapRect.swift; sourceTree = "<group>"; };
 		2BE6159B2600120C006125C0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				2B75DF43260D04A800E1D046 /* UIImage.swift */,
+				2BA8974D298ECC190072CE82 /* MKMapRect.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -128,11 +133,20 @@
 		2B75DF57260E92A800E1D046 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2B10495725FC1B43003366D6 /* ContentView.swift */,
+				2BA8974A298EA02B0072CE82 /* ViewModels */,
+				2B10495725FC1B43003366D6 /* IntroView.swift */,
 				2B1049A625FC2146003366D6 /* MapView.swift */,
 				2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2BA8974A298EA02B0072CE82 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2BA8974B298EA03A0072CE82 /* MapViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					2B10495C25FC1B45003366D6 = {
 						CreatedOnToolsVersion = 12.4;
@@ -233,13 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B10498125FC1B45003366D6 /* ContentView.swift in Sources */,
+				2B10498125FC1B45003366D6 /* IntroView.swift in Sources */,
+				2BA8974C298EA03A0072CE82 /* MapViewModel.swift in Sources */,
 				2B75DF44260D04A800E1D046 /* UIImage.swift in Sources */,
 				2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */,
 				2B06831F2608C5C1007849F2 /* ImageOverlay.swift in Sources */,
 				2B1049A725FC2146003366D6 /* MapView.swift in Sources */,
 				2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */,
 				2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */,
+				2BA8974E298ECC190072CE82 /* MKMapRect.swift in Sources */,
 				2B06831B2608C3FC007849F2 /* CustomMapView.swift in Sources */,
 				2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */,
 			);
@@ -298,6 +314,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -357,6 +374,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

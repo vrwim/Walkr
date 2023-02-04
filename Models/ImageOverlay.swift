@@ -7,16 +7,36 @@
 
 import MapKit
 
-class ImageOverlay: NSObject, MKOverlay {
+class ImageOverlay: NSObject, MKOverlay, Codable {
+    var id = UUID()
     let image: UIImage
     let boundingMapRect: MKMapRect
-    let coordinate: CLLocationCoordinate2D
-    let rotation: CLLocationDirection
     
-    init(image: UIImage, rect: MKMapRect, rotation: CLLocationDirection) {
-        self.image = UIImage.fixedOrientation(for: image) ?? image
+    var coordinate: CLLocationCoordinate2D {
+        boundingMapRect.origin.coordinate
+    }
+    
+    init(image: UIImage, rect: MKMapRect) {
+        self.image = image.fixedOrientation() ?? image
         self.boundingMapRect = rect
-        self.coordinate = rect.origin.coordinate
-        self.rotation = rotation
+    }
+    
+    required init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try values.decode(UUID.self, forKey: .id)
+        self.image = UIImage.loadImage(key: self.id.uuidString)!
+        self.boundingMapRect = try values.decode(MKMapRect.self, forKey: .boundingMapRect)
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        image.saveImage(key: id.uuidString)
+        try container.encode(boundingMapRect, forKey: .boundingMapRect)
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case boundingMapRect
     }
 }

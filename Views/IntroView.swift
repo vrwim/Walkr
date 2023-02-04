@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  IntroView.swift
 //  Shared
 //
 //  Created by Wim Van Renterghem on 12/03/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct IntroView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -35,6 +35,6 @@ enum SheetType: String, Identifiable {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        IntroView()
     }
 }
