@@ -13,10 +13,6 @@ extension UIImage {
             return self
         }
         
-        let size = size
-        
-        let imageOrientation = imageOrientation
-        
         var transform: CGAffineTransform = .identity
 
         switch imageOrientation {
