@@ -24,8 +24,12 @@
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Importing from the camera is only possible with access</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need your location to show it on the map</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Importing from your photo library is only possible with access</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UISceneConfigurations</key>

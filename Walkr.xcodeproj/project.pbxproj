@@ -403,6 +403,7 @@
 				DEVELOPMENT_TEAM = 23DKY2SA2G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hike Overlay";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -427,6 +428,7 @@
 				DEVELOPMENT_TEAM = 23DKY2SA2G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Hike Overlay";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
