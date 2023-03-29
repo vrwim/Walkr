@@ -15,12 +15,6 @@ struct MapView: View {
     @StateObject var viewModel = MapViewModel()
     @State var visibleMapRect = MKMapRect(origin: MKMapPoint(CLLocationCoordinate2D(latitude: 51, longitude: 3)), size: MKMapSize(width: 200_000, height: 200_000))
     
-    init() {
-        let locationManager = CLLocationManager()
-        locationManager.requestWhenInUseAuthorization() // Ask for location permission if needed
-        locationManager.startUpdatingLocation() // Start updating user location
-    }
-    
     var body: some View {
         ZStack {
             if let image = image {
@@ -78,6 +72,11 @@ struct MapView: View {
         })
         .sheet(item: $pickingFrom) { item in
             ImagePicker(sourceType: item, selectedImage: $image)
+        }
+        .onAppear {
+            let locationManager = CLLocationManager()
+            locationManager.requestWhenInUseAuthorization() // Ask for location permission if needed
+            locationManager.startUpdatingLocation() // Start updating user location
         }
     }
 }
