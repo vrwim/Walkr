@@ -90,7 +90,7 @@ extension UIImagePickerController.SourceType: Identifiable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(image: nil)
+        MapView()
             .previewDevice("iPhone X")
     }
 }
