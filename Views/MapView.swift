@@ -30,11 +30,15 @@ struct MapView: View {
                     Spacer()
                     if image == nil {
                         // Not aligning image, show buttons to pick a new image
-                        SFSymbolsButton(image: "photo.on.rectangle.angled") {
-                            pickingFrom = .photoLibrary
+                        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+                            SFSymbolsButton(image: "photo.on.rectangle.angled") {
+                                pickingFrom = .photoLibrary
+                            }
                         }
-                        SFSymbolsButton(image: "camera") {
-                            pickingFrom = .camera
+                        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                            SFSymbolsButton(image: "camera") {
+                                pickingFrom = .camera
+                            }
                         }
                     } else {
                         // Aligning image, show done button
