@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIKit
+import UniformTypeIdentifiers
 
 struct ImagePicker: UIViewControllerRepresentable {
     var sourceType: UIImagePickerController.SourceType
@@ -18,6 +19,7 @@ struct ImagePicker: UIViewControllerRepresentable {
         let imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = false
         imagePicker.sourceType = sourceType
+        imagePicker.mediaTypes = [ UTType.image.identifier ]
         imagePicker.delegate = context.coordinator
         return imagePicker
     }
