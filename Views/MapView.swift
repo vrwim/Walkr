@@ -78,6 +78,9 @@ struct MapView: View {
             locationManager.requestWhenInUseAuthorization() // Ask for location permission if needed
             locationManager.startUpdatingLocation() // Start updating user location
         }
+        .onAppear {
+            UserDefaults.standard.set(true, forKey: "seenIntro")
+        }
     }
 }
 

@@ -9,20 +9,19 @@ import SwiftUI
 
 struct IntroView: View {
     var body: some View {
-        NavigationView {
-            VStack(spacing: 20) {
-                Text("How this app works")
+        VStack(spacing: 20) {
+            Text("How this app works")
+                .font(.title)
+            Text("This app can overlay a picture of a route on the map, allowing you to see your location in the route in real time")
+            NavigationLink(destination: MapView()) {
+                Text("Go!")
                     .font(.title)
-                Text("This app can overlay a picture of a route on the map, allowing you to see your location in the route in real time")
-                NavigationLink(destination: MapView()) {
-                    Text("Go!")
-                        .font(.title)
-                }
-                .padding(20)
             }
             .padding(20)
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .padding(20)
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 
