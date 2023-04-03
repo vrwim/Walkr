@@ -21,7 +21,6 @@ struct IntroView: View {
         }
         .padding(20)
         .navigationBarTitleDisplayMode(.inline)
-        
     }
 }
 
