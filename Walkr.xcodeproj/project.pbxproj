@@ -21,6 +21,7 @@
 		2BA8974E298ECC190072CE82 /* MKMapRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8974D298ECC190072CE82 /* MKMapRect.swift */; };
 		2BCAE02529DEBB6B005617A9 /* ImageCropPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAE01E29DEBB6B005617A9 /* ImageCropPicker.swift */; };
 		2BCAE02A29DEBB6C005617A9 /* ImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAE02429DEBB6B005617A9 /* ImageCropView.swift */; };
+		2BCAE02C29DED12A005617A9 /* CLLocationDegrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAE02B29DED12A005617A9 /* CLLocationDegrees.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		2BA8974D298ECC190072CE82 /* MKMapRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapRect.swift; sourceTree = "<group>"; };
 		2BCAE01E29DEBB6B005617A9 /* ImageCropPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropPicker.swift; sourceTree = "<group>"; };
 		2BCAE02429DEBB6B005617A9 /* ImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropView.swift; sourceTree = "<group>"; };
+		2BCAE02B29DED12A005617A9 /* CLLocationDegrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationDegrees.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				2B75DF43260D04A800E1D046 /* UIImage.swift */,
 				2BA8974D298ECC190072CE82 /* MKMapRect.swift */,
+				2BCAE02B29DED12A005617A9 /* CLLocationDegrees.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				2BCAE02A29DEBB6C005617A9 /* ImageCropView.swift in Sources */,
 				2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */,
 				2BA8974E298ECC190072CE82 /* MKMapRect.swift in Sources */,
+				2BCAE02C29DED12A005617A9 /* CLLocationDegrees.swift in Sources */,
 				2BCAE02529DEBB6B005617A9 /* ImageCropPicker.swift in Sources */,
 				2B06831B2608C3FC007849F2 /* CustomMapView.swift in Sources */,
 				2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */,

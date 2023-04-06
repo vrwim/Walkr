@@ -21,15 +21,15 @@ struct CurrentPicturesView: View {
                     VStack(alignment: .leading) {
                         HStack {
                             Text("Longitude:").bold()
-                            Text("\(photo.coordinate.longitude)")
+                            Text(photo.coordinate.longitudeString)
                         }
                         HStack {
                             Text("Latitude:").bold()
-                            Text("\(photo.coordinate.latitude)")
+                            Text(photo.coordinate.latitudeString)
                         }
                         HStack {
                             Text("Size:").bold()
-                            Text("\(Int(photo.boundingMapRect.width))x\(Int(photo.boundingMapRect.height))")
+                            Text(photo.boundingMapRect.sizeString)
                         }
                     }
                     .font(.footnote)
