@@ -19,7 +19,8 @@
 		2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */; };
 		2BA8974C298EA03A0072CE82 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8974B298EA03A0072CE82 /* MapViewModel.swift */; };
 		2BA8974E298ECC190072CE82 /* MKMapRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA8974D298ECC190072CE82 /* MKMapRect.swift */; };
-		2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE6159B2600120C006125C0 /* ImagePicker.swift */; };
+		2BCAE02529DEBB6B005617A9 /* ImageCropPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAE01E29DEBB6B005617A9 /* ImageCropPicker.swift */; };
+		2BCAE02A29DEBB6C005617A9 /* ImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAE02429DEBB6B005617A9 /* ImageCropView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,8 @@
 		2B75DF53260E913B00E1D046 /* CurrentPicturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPicturesView.swift; sourceTree = "<group>"; };
 		2BA8974B298EA03A0072CE82 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		2BA8974D298ECC190072CE82 /* MKMapRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapRect.swift; sourceTree = "<group>"; };
-		2BE6159B2600120C006125C0 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		2BCAE01E29DEBB6B005617A9 /* ImageCropPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropPicker.swift; sourceTree = "<group>"; };
+		2BCAE02429DEBB6B005617A9 /* ImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +116,8 @@
 		2B342CD126015662002963D6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2BE6159B2600120C006125C0 /* ImagePicker.swift */,
+				2BCAE02429DEBB6B005617A9 /* ImageCropView.swift */,
+				2BCAE01E29DEBB6B005617A9 /* ImageCropPicker.swift */,
 				2B342CD22601567D002963D6 /* SFSymbolsButton.swift */,
 				2B06831A2608C3FC007849F2 /* CustomMapView.swift */,
 			);
@@ -251,12 +254,13 @@
 				2B10498125FC1B45003366D6 /* IntroView.swift in Sources */,
 				2BA8974C298EA03A0072CE82 /* MapViewModel.swift in Sources */,
 				2B75DF44260D04A800E1D046 /* UIImage.swift in Sources */,
-				2BE6159C2600120C006125C0 /* ImagePicker.swift in Sources */,
 				2B06831F2608C5C1007849F2 /* ImageOverlay.swift in Sources */,
 				2B1049A725FC2146003366D6 /* MapView.swift in Sources */,
 				2B10497F25FC1B45003366D6 /* WalkrApp.swift in Sources */,
+				2BCAE02A29DEBB6C005617A9 /* ImageCropView.swift in Sources */,
 				2B75DF54260E913B00E1D046 /* CurrentPicturesView.swift in Sources */,
 				2BA8974E298ECC190072CE82 /* MKMapRect.swift in Sources */,
+				2BCAE02529DEBB6B005617A9 /* ImageCropPicker.swift in Sources */,
 				2B06831B2608C3FC007849F2 /* CustomMapView.swift in Sources */,
 				2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */,
 			);

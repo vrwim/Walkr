@@ -9,9 +9,11 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    @State var originalImage: UIImage?
     /// The image currently aligning
     @State var image: UIImage?
     @State var pickingFrom: UIImagePickerController.SourceType?
+    @State var isPickerVisible = false
     @StateObject var viewModel = MapViewModel()
     @State var visibleMapRect = MKMapRect(origin: MKMapPoint(CLLocationCoordinate2D(latitude: 51, longitude: 3)), size: MKMapSize(width: 200_000, height: 200_000))
     
@@ -75,7 +77,7 @@ struct MapView: View {
             Text("List images")
         })
         .sheet(item: $pickingFrom) { item in
-            ImagePicker(sourceType: item, selectedImage: $image)
+            ImageCropPicker(sourceType: item, originalImage: $originalImage, croppedImage: $image)
         }
         .onAppear {
             let locationManager = CLLocationManager()
