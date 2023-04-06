@@ -9,6 +9,9 @@ import SwiftUI
 
 struct CurrentPicturesView: View {
     var viewModel: MapViewModel
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         Form {
             ForEach(viewModel.photos, id: \.self) { photo in
@@ -33,6 +36,17 @@ struct CurrentPicturesView: View {
                         }
                     }
                     .font(.footnote)
+                    
+                    Spacer()
+                    
+                    Button {
+                        viewModel.startEditing(photo)
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "pencil")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                    }
                 }
             }
             .onDelete { index in
