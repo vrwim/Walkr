@@ -35,4 +35,25 @@ extension MKMapRect: Codable {
         
         self.init(origin: origin, size: size)
     }
+    
+    var sizeInMeters: (width: CLLocationDistance, height: CLLocationDistance) {
+        let eastMapPoint = MKMapPoint(x: self.minX, y: self.midY)
+        let westMapPoint = MKMapPoint(x: self.maxX, y: self.midY)
+        let widthInMeters = eastMapPoint.distance(to: westMapPoint)
+        let heightInMeters = widthInMeters * height / width
+        return (widthInMeters, heightInMeters)
+    }
+    
+    var sizeString: String {
+        // Format sizeInMeters, use meters when < 1000, use kilometers when > 1000
+        let (width, height) = sizeInMeters
+        if width < 1000 || height < 1000 {
+            return "\(Int(width)) by \(Int(height)) m"
+        } else {
+            // Round to 2 decimals
+            let widthString = String(format: "%.2f", width / 1000)
+            let heightString = String(format: "%.2f", height / 1000)
+            return "\(widthString) by \(heightString) km"
+        }
+    }
 }

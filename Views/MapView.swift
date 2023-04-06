@@ -8,45 +8,36 @@
 import SwiftUI
 import MapKit
 
+extension View {
+    func andPrint(_ val: Any) -> some View {
+        print(val)
+        return self
+    }
+}
+
 struct MapView: View {
-    /// The image currently aligning
-    @State var image: UIImage?
-    @State var pickingFrom: UIImagePickerController.SourceType?
     @StateObject var viewModel = MapViewModel()
-    @State var visibleMapRect = MKMapRect(origin: MKMapPoint(CLLocationCoordinate2D(latitude: 51, longitude: 3)), size: MKMapSize(width: 200_000, height: 200_000))
     
     var body: some View {
         ZStack {
-            if let image = image {
+            if let image = viewModel.currentImage {
                 Image(uiImage: image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
-            CustomMapView(overlays: $viewModel.photos, visibleMapRect: $visibleMapRect)
-                .opacity(image == nil ? 1 : 0.5)
+            CustomMapView(overlays: $viewModel.photos, visibleMapRect: $viewModel.visibleMapRect, moveTo: $viewModel.moveTo)
+                .opacity(viewModel.currentImage == nil ? 1 : 0.5)
             VStack {
                 Spacer()
                 HStack(spacing: 20) {
                     Spacer()
-                    if image == nil {
-                        // Not aligning image, show buttons to pick a new image
-                        SFSymbolsButton(image: "photo.on.rectangle.angled") {
-                            pickingFrom = .photoLibrary
-                        }
-                        SFSymbolsButton(image: "camera") {
-                            pickingFrom = .camera
-                        }
-                    } else {
+                    if let image = viewModel.currentImage {
                         // Aligning image, show done button
                         Button(action: {
-                            guard let image = image else {
-                                fatalError("This button shouldn't be here!")
-                            }
-                            
                             let imageAspectRatio = Double(image.size.height / image.size.width)
-                            let mapAspectRatio = Double(visibleMapRect.size.height / visibleMapRect.size.width)
+                            let mapAspectRatio = Double(viewModel.visibleMapRect.size.height / viewModel.visibleMapRect.size.width)
                             
-                            var mapRect = visibleMapRect
+                            var mapRect = viewModel.visibleMapRect
                             if mapAspectRatio > imageAspectRatio {
                                 let heightChange = mapRect.size.height - mapRect.size.width * imageAspectRatio
                                 mapRect.size.height = mapRect.size.width * imageAspectRatio
@@ -57,12 +48,29 @@ struct MapView: View {
                                 mapRect.origin.x += widthChange / 2
                             }
                             
-                            viewModel.addImageOverlay(ImageOverlay(image: image, rect: mapRect))
+                            if viewModel.image != nil {
+                                // TODO: move to func in vm
+                                viewModel.addImageOverlay(ImageOverlay(image: image, rect: mapRect))
+                                viewModel.image = nil
+                            } else if viewModel.editingPhoto != nil {
+                                viewModel.editImageOverlay(mapRect: mapRect)
+                            }
                             
-                            self.image = nil
                         }, label: {
                             Text("Done")
                         })
+                    } else {
+                        // Not aligning image, show buttons to pick a new image
+                        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+                            SFSymbolsButton(image: "photo.on.rectangle.angled") {
+                                viewModel.pickingFrom = .photoLibrary
+                            }
+                        }
+                        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                            SFSymbolsButton(image: "camera") {
+                                viewModel.pickingFrom = .camera
+                            }
+                        }
                     }
                 }.padding(20)
             }
@@ -70,13 +78,16 @@ struct MapView: View {
         .navigationBarItems(trailing: NavigationLink(destination: CurrentPicturesView(viewModel: viewModel)) {
             Text("List images")
         })
-        .sheet(item: $pickingFrom) { item in
-            ImagePicker(sourceType: item, selectedImage: $image)
+        .sheet(item: $viewModel.pickingFrom) { item in
+            ImageCropPicker(sourceType: item, originalImage: $viewModel.originalImage, croppedImage: $viewModel.image)
         }
         .onAppear {
             let locationManager = CLLocationManager()
             locationManager.requestWhenInUseAuthorization() // Ask for location permission if needed
             locationManager.startUpdatingLocation() // Start updating user location
+        }
+        .onAppear {
+            UserDefaults.standard.set(true, forKey: "seenIntro")
         }
     }
 }

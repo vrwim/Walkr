@@ -11,6 +11,7 @@ import MapKit
 struct CustomMapView: UIViewRepresentable {
     @Binding var overlays: [ImageOverlay]
     @Binding var visibleMapRect: MKMapRect
+    @Binding var moveTo: MKMapRect?
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
@@ -37,6 +38,11 @@ struct CustomMapView: UIViewRepresentable {
         if !removedOverlays.isEmpty {
             print("Removing overlays: \(removedOverlays)")
             view.removeOverlays(removedOverlays)
+        }
+        
+        if let moveTo {
+            view.visibleMapRect = moveTo
+            self.moveTo = nil
         }
     }
 

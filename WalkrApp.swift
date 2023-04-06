@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct WalkrApp: App {
+    let seenIntro: Bool
+    
+    init() {
+        seenIntro = UserDefaults.standard.bool(forKey: "seenIntro")
+    }
+    
     var body: some Scene {
         WindowGroup {
-            IntroView()
+            
+            NavigationView {
+                if seenIntro {
+                    MapView()
+                } else {
+                    IntroView()
+                }
+            }
         }
     }
 }

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct CurrentPicturesView: View {
     var viewModel: MapViewModel
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         Form {
             ForEach(viewModel.photos, id: \.self) { photo in
@@ -21,18 +24,29 @@ struct CurrentPicturesView: View {
                     VStack(alignment: .leading) {
                         HStack {
                             Text("Longitude:").bold()
-                            Text("\(photo.coordinate.longitude)")
+                            Text(photo.coordinate.longitudeString)
                         }
                         HStack {
                             Text("Latitude:").bold()
-                            Text("\(photo.coordinate.latitude)")
+                            Text(photo.coordinate.latitudeString)
                         }
                         HStack {
                             Text("Size:").bold()
-                            Text("\(Int(photo.boundingMapRect.width))x\(Int(photo.boundingMapRect.height))")
+                            Text(photo.boundingMapRect.sizeString)
                         }
                     }
                     .font(.footnote)
+                    
+                    Spacer()
+                    
+                    Button {
+                        viewModel.startEditing(photo)
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "pencil")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                    }
                 }
             }
             .onDelete { index in

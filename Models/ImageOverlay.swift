@@ -10,7 +10,7 @@ import MapKit
 class ImageOverlay: NSObject, MKOverlay, Codable {
     var id = UUID()
     let image: UIImage
-    let boundingMapRect: MKMapRect
+    var boundingMapRect: MKMapRect
     
     var coordinate: CLLocationCoordinate2D {
         boundingMapRect.origin.coordinate
