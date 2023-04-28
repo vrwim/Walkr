@@ -18,6 +18,7 @@ struct CustomMapView: UIViewRepresentable {
                 
         mapView.showsUserLocation = true
         mapView.isRotateEnabled = false
+        mapView.isPitchEnabled = false
                 
         mapView.delegate = context.coordinator
         return mapView
