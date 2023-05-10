@@ -63,6 +63,18 @@ class MapViewModel: ObservableObject {
         saveImages()
     }
     
+    func toggle(_ photo: ImageOverlay) {
+        guard let index = photos.firstIndex(of: photo) else {
+            print("Not toggling a current photo!")
+            return
+        }
+        
+        photo.enabled.toggle()
+        photos[index] = photo
+        
+        saveImages()
+    }
+    
     func removeImage(at index: Int) {
         // Remove editing photo in case it was the current one
         self.editingPhoto = nil

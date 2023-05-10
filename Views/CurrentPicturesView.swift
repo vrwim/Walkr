@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CurrentPicturesView: View {
-    var viewModel: MapViewModel
+    @ObservedObject var viewModel: MapViewModel
     
     @Environment(\.presentationMode) var presentationMode
     
@@ -16,6 +16,15 @@ struct CurrentPicturesView: View {
         Form {
             ForEach(viewModel.photos, id: \.self) { photo in
                 HStack {
+                    Button(action: {
+                        viewModel.toggle(photo)
+                    }) {
+                        Image(systemName: "checkmark.circle")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(photo.enabled ? .green : .gray)
+                    }
+                    .buttonStyle(.borderless)
                     Image(uiImage: photo.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -47,6 +56,7 @@ struct CurrentPicturesView: View {
                             .resizable()
                             .frame(width: 20, height: 20)
                     }
+                    .buttonStyle(.borderless)
                 }
             }
             .onDelete { index in
