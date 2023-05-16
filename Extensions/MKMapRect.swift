@@ -45,15 +45,16 @@ extension MKMapRect: Codable {
     }
     
     var sizeString: String {
-        // Format sizeInMeters, use meters when < 1000, use kilometers when > 1000
         let (width, height) = sizeInMeters
-        if width < 1000 || height < 1000 {
-            return "\(Int(width)) by \(Int(height)) m"
+        return "\(formatSize(size: width)) by \(formatSize(size: height))"
+    }
+    
+    // Format sizeInMeters, use meters when < 1000, use kilometers when > 1000
+    private func formatSize(size: CLLocationDistance) -> String {
+        if size < 1000 {
+            return "\(Int(size))m"
         } else {
-            // Round to 2 decimals
-            let widthString = String(format: "%.2f", width / 1000)
-            let heightString = String(format: "%.2f", height / 1000)
-            return "\(widthString) by \(heightString) km"
+            return String(format: "%.2f", size / 1000) + "km"
         }
     }
 }
