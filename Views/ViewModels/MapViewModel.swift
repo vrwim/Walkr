@@ -18,6 +18,7 @@ class MapViewModel: ObservableObject {
     @Published var photos: [ImageOverlay]
     @Published var editingPhoto: ImageOverlay?
     @Published var moveTo: MKMapRect?
+    @Published var currentImageName = ""
     
     private var editingIndex: Int?
     
@@ -34,9 +35,12 @@ class MapViewModel: ObservableObject {
         image ?? editingPhoto?.image
     }
     
-    func addImageOverlay(_ imageOverlay: ImageOverlay) {
-        photos.append(imageOverlay)
-        saveImages()
+    func onDone(_ mapRect: MKMapRect) {
+        if image != nil {
+            addImageOverlay(mapRect)
+        } else if editingPhoto != nil {
+            editImageOverlay(mapRect)
+        }
     }
     
     func startEditing(_ photo: ImageOverlay) {
@@ -47,20 +51,9 @@ class MapViewModel: ObservableObject {
         }
         self.editingIndex = index
         self.editingPhoto = photo
+        self.currentImageName = photos[index].name
         moveTo = photo.boundingMapRect
         photos.remove(at: photos.firstIndex(of: photo)!)
-    }
-    
-    func editImageOverlay(mapRect: MKMapRect) {
-        guard let editingPhoto, let editingIndex else {
-            fatalError("Not editing a photo??")
-        }
-                
-        // Need to add a new object to force the map to reload
-        photos.insert(ImageOverlay(image: editingPhoto.image, rect: mapRect), at: editingIndex)
-        
-        self.editingPhoto = nil
-        saveImages()
     }
     
     func toggle(_ photo: ImageOverlay) {
@@ -83,8 +76,30 @@ class MapViewModel: ObservableObject {
         saveImages()
     }
     
-    func saveImages() {
+    private func saveImages() {
         UserDefaults.standard.set(try! JSONEncoder().encode(photos), forKey: "imageOverlays")
         UserDefaults.standard.synchronize()
+    }
+    
+    private func addImageOverlay(_ mapRect: MKMapRect) {
+        guard let image else {
+            return
+        }
+        photos.append(ImageOverlay(image: image, rect: mapRect, name: currentImageName))
+        
+        self.image = nil
+        saveImages()
+    }
+    
+    private func editImageOverlay(_ mapRect: MKMapRect) {
+        guard let editingPhoto, let editingIndex else {
+            fatalError("Not editing a photo??")
+        }
+                
+        // Need to add a new object to force the map to reload
+        photos.insert(ImageOverlay(image: editingPhoto.image, rect: mapRect, name: currentImageName), at: editingIndex)
+        
+        self.editingPhoto = nil
+        saveImages()
     }
 }

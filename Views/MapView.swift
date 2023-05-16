@@ -27,6 +27,17 @@ struct MapView: View {
             }
             CustomMapView(overlays: $viewModel.photos, visibleMapRect: $viewModel.visibleMapRect, moveTo: $viewModel.moveTo)
                 .opacity(viewModel.currentImage == nil ? 1 : 0.5)
+            if viewModel.currentImage != nil {
+                VStack {
+                    TextField("Name", text: $viewModel.currentImageName)
+                        .multilineTextAlignment(.center)
+                        .background(Color.white)
+                        .padding(20)
+                    
+                    Spacer()
+                }
+            }
+            // Button(s)
             VStack {
                 Spacer()
                 HStack(spacing: 20) {
@@ -48,17 +59,15 @@ struct MapView: View {
                                 mapRect.origin.x += widthChange / 2
                             }
                             
-                            if viewModel.image != nil {
-                                // TODO: move to func in vm
-                                viewModel.addImageOverlay(ImageOverlay(image: image, rect: mapRect))
-                                viewModel.image = nil
-                            } else if viewModel.editingPhoto != nil {
-                                viewModel.editImageOverlay(mapRect: mapRect)
-                            }
+                            viewModel.onDone(mapRect)
                             
                         }, label: {
-                            Text("Done")
+                            Text("Done").bold()
                         })
+                        .padding(8)
+                        .foregroundColor(.white)
+                        .background(Color.accentColor)
+                        .clipShape(Capsule())
                     } else {
                         // Not aligning image, show buttons to pick a new image
                         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
