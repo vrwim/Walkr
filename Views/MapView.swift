@@ -86,7 +86,7 @@ struct MapView: View {
         }
         .navigationBarItems(trailing: NavigationLink(destination: CurrentPicturesView(viewModel: viewModel)) {
             Text("List images")
-        })
+        }.disabled(viewModel.currentImage != nil))
         .sheet(item: $viewModel.pickingFrom) { item in
             ImageCropPicker(sourceType: item, originalImage: $viewModel.originalImage, croppedImage: $viewModel.image)
         }
