@@ -17,6 +17,7 @@ extension View {
 
 struct MapView: View {
     @StateObject var viewModel = MapViewModel()
+    @State var opacity: Double = 0.5
     
     var body: some View {
         ZStack {
@@ -26,23 +27,26 @@ struct MapView: View {
                     .aspectRatio(contentMode: .fit)
             }
             CustomMapView(overlays: $viewModel.photos, visibleMapRect: $viewModel.visibleMapRect, moveTo: $viewModel.moveTo)
-                .opacity(viewModel.currentImage == nil ? 1 : 0.5)
+                .opacity(viewModel.currentImage == nil ? 1 : 1 - opacity)
             if viewModel.currentImage != nil {
                 VStack {
                     TextField("Name", text: $viewModel.currentImageName)
                         .multilineTextAlignment(.center)
                         .background(Color.white)
                         .padding(20)
-                    
                     Spacer()
+                    HStack {
+                    }
+                    .padding([.leading, .trailing], 20)
                 }
+                .padding(.bottom, 70)
             }
             // Button(s)
             VStack {
                 Spacer()
                 HStack(spacing: 20) {
-                    Spacer()
                     if let image = viewModel.currentImage {
+                        Slider(value: $opacity, in: 0...1)
                         // Aligning image, show done button
                         Button(action: {
                             let imageAspectRatio = Double(image.size.height / image.size.width)
@@ -69,6 +73,7 @@ struct MapView: View {
                         .background(Color.accentColor)
                         .clipShape(Capsule())
                     } else {
+                        Spacer()
                         // Not aligning image, show buttons to pick a new image
                         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
                             SFSymbolsButton(image: "photo.on.rectangle.angled") {
