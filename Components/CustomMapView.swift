@@ -25,23 +25,9 @@ struct CustomMapView: UIViewRepresentable {
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
-        let addedOverlays = overlays.filter { overlay in
-            // Return all overlays that are not present in the map AND are marked as enabled
-            !view.overlays.contains { $0 as! NSObject == overlay } && overlay.enabled
-        }
-        if !addedOverlays.isEmpty {
-            print("Adding overlays: \(addedOverlays)")
-            view.addOverlays(addedOverlays)
-        }
         
-        let removedOverlays = view.overlays.filter { overlay in
-            // Return all overlays that are not present as enabled in the array
-            !overlays.contains { $0.enabled && $0 == overlay as! NSObject }
-        }
-        if !removedOverlays.isEmpty {
-            print("Removing overlays: \(removedOverlays)")
-            view.removeOverlays(removedOverlays)
-        }
+        view.removeOverlays(view.overlays)
+        view.addOverlays(overlays.filter { $0.enabled })
         
         if let moveTo {
             view.visibleMapRect = moveTo

@@ -63,6 +63,9 @@ struct CurrentPicturesView: View {
             .onDelete { index in
                 viewModel.removeImage(at: Int(index.first!))
             }
+            .onMove { from, to in
+                viewModel.move(from: from, to: to)
+            }
         }
     }
 }

@@ -76,6 +76,11 @@ class MapViewModel: ObservableObject {
         saveImages()
     }
     
+    func move(from: IndexSet, to: Int) {
+        photos.move(fromOffsets: from, toOffset: to)
+        saveImages()
+    }
+    
     private func saveImages() {
         UserDefaults.standard.set(try! JSONEncoder().encode(photos), forKey: "imageOverlays")
         UserDefaults.standard.synchronize()
