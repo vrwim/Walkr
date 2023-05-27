@@ -21,6 +21,7 @@ class MapViewModel: ObservableObject {
     @Published var currentImageName = ""
     
     private var editingIndex: Int?
+    private var scaling = 0.9
     
     init() {
         guard let fromUserDefaults = UserDefaults.standard.data(forKey: "imageOverlays") else {
@@ -52,7 +53,7 @@ class MapViewModel: ObservableObject {
         self.editingIndex = index
         self.editingPhoto = photo
         self.currentImageName = photos[index].name
-        moveTo = photo.boundingMapRect
+        moveTo = photo.boundingMapRect.adjusted(scaling: 1 / scaling)
         photos.remove(at: photos.firstIndex(of: photo)!)
     }
     
@@ -100,7 +101,7 @@ class MapViewModel: ObservableObject {
         guard let editingPhoto, let editingIndex else {
             fatalError("Not editing a photo??")
         }
-                
+        
         // Need to add a new object to force the map to reload
         photos.insert(ImageOverlay(image: editingPhoto.image, rect: mapRect, name: currentImageName), at: editingIndex)
         

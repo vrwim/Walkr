@@ -19,12 +19,15 @@ struct MapView: View {
     @StateObject var viewModel = MapViewModel()
     @State var opacity: Double = 0.5
     
+    private var scaling = 0.9
+    
     var body: some View {
         ZStack {
             if let image = viewModel.currentImage {
                 Image(uiImage: image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .scaleEffect(scaling)
             }
             CustomMapView(overlays: $viewModel.photos, visibleMapRect: $viewModel.visibleMapRect, moveTo: $viewModel.moveTo)
                 .opacity(viewModel.currentImage == nil ? 1 : 1 - opacity)
@@ -54,16 +57,18 @@ struct MapView: View {
                             
                             var mapRect = viewModel.visibleMapRect
                             if mapAspectRatio > imageAspectRatio {
+                                // Image is wider than the map, adjust height to match image aspect ratio
                                 let heightChange = mapRect.size.height - mapRect.size.width * imageAspectRatio
                                 mapRect.size.height = mapRect.size.width * imageAspectRatio
                                 mapRect.origin.y += heightChange / 2
                             } else {
+                                // Image is taller than the map, adjust width to match image aspect ratio
                                 let widthChange = mapRect.size.width - mapRect.size.height / imageAspectRatio
                                 mapRect.size.width = mapRect.size.height / imageAspectRatio
                                 mapRect.origin.x += widthChange / 2
                             }
                             
-                            viewModel.onDone(mapRect)
+                            viewModel.onDone(mapRect.adjusted(scaling: scaling))
                             
                         }, label: {
                             Text("Done").bold()

@@ -15,15 +15,15 @@ struct CustomMapView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
-                
+        
         mapView.showsUserLocation = true
         mapView.isRotateEnabled = false
         mapView.isPitchEnabled = false
-                
+        
         mapView.delegate = context.coordinator
         return mapView
     }
-
+    
     func updateUIView(_ view: MKMapView, context: Context) {
         
         view.removeOverlays(view.overlays)
@@ -34,14 +34,14 @@ struct CustomMapView: UIViewRepresentable {
             self.moveTo = nil
         }
     }
-
+    
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
     
     class Coordinator: NSObject, MKMapViewDelegate {
         var parent: CustomMapView
-
+        
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             return ImageOverlayRenderer(overlay: overlay)
         }
@@ -49,7 +49,7 @@ struct CustomMapView: UIViewRepresentable {
         func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
             parent.visibleMapRect = mapView.visibleMapRect
         }
-
+        
         init(_ parent: CustomMapView) {
             self.parent = parent
         }

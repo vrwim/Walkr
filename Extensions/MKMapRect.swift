@@ -49,6 +49,19 @@ extension MKMapRect: Codable {
         return "\(formatSize(size: width)) by \(formatSize(size: height))"
     }
     
+    func adjusted(scaling: Double) -> MKMapRect {
+        var mapRect = self
+        // Adjust location of the image
+        mapRect.origin.x += (mapRect.size.width - mapRect.size.width * scaling) / 2
+        mapRect.origin.y += (mapRect.size.height - mapRect.size.height * scaling) / 2
+        
+        // Adjust size of the image
+        mapRect.size.height *= scaling
+        mapRect.size.width *= scaling
+        
+        return mapRect
+    }
+    
     // Format sizeInMeters, use meters when < 1000, use kilometers when > 1000
     private func formatSize(size: CLLocationDistance) -> String {
         if size < 1000 {
