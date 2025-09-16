@@ -65,20 +65,27 @@ struct CustomMapView: UIViewRepresentable {
     
     class ImageOverlayRenderer: MKOverlayRenderer {
         override func draw(_ mapRect: MKMapRect, zoomScale: MKZoomScale, in context: CGContext) {
-            guard let overlay = overlay as? ImageOverlay else {
+            guard let overlay = overlay as? ImageOverlay,
+                  let cgImage = overlay.image.cgImage else {
                 return
             }
-            
-            /// Rotation in radians
-            let rotation = overlay.rotation * Double.pi / 180
-            
+
+            let rotation = CGFloat(overlay.rotation * Double.pi / 180)
             let rect = self.rect(for: overlay.boundingMapRect)
-            let scale = CGFloat((3 * sin(rotation)) / 4)
-            
-            context.scaleBy(x: scale, y: -scale)
-//            context.rotate(by: CGFloat(-rotation))
-            context.translateBy(x: 0.0, y: -rect.size.height)
-            context.draw(overlay.image.cgImage!, in: rect)
+
+            context.saveGState()
+            context.translateBy(x: rect.midX, y: rect.midY)
+            context.rotate(by: -rotation)
+
+            let drawRect = CGRect(
+                x: -rect.size.width / 2,
+                y: -rect.size.height / 2,
+                width: rect.size.width,
+                height: rect.size.height
+            )
+
+            context.draw(cgImage, in: drawRect)
+            context.restoreGState()
         }
     }
 }
