@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,8 @@
 		2BCAE02529DEBB6B005617A9 /* ImageCropPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAE01E29DEBB6B005617A9 /* ImageCropPicker.swift */; };
 		2BCAE02A29DEBB6C005617A9 /* ImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAE02429DEBB6B005617A9 /* ImageCropView.swift */; };
 		2BCAE02C29DED12A005617A9 /* CLLocationDegrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAE02B29DED12A005617A9 /* CLLocationDegrees.swift */; };
+		AA000001000000020000AA01 /* CornerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000001000000010000AA01 /* CornerAnnotation.swift */; };
+		AA000001000000020000AA02 /* CornerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000001000000010000AA02 /* CornerAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		2BCAE01E29DEBB6B005617A9 /* ImageCropPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropPicker.swift; sourceTree = "<group>"; };
 		2BCAE02429DEBB6B005617A9 /* ImageCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCropView.swift; sourceTree = "<group>"; };
 		2BCAE02B29DED12A005617A9 /* CLLocationDegrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationDegrees.swift; sourceTree = "<group>"; };
+		AA000001000000010000AA01 /* CornerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerAnnotation.swift; sourceTree = "<group>"; };
+		AA000001000000010000AA02 /* CornerAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2B06831E2608C5C1007849F2 /* ImageOverlay.swift */,
+				AA000001000000010000AA01 /* CornerAnnotation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				2BCAE01E29DEBB6B005617A9 /* ImageCropPicker.swift */,
 				2B342CD22601567D002963D6 /* SFSymbolsButton.swift */,
 				2B06831A2608C3FC007849F2 /* CustomMapView.swift */,
+				AA000001000000010000AA02 /* CornerAnnotationView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -267,6 +273,8 @@
 				2BCAE02529DEBB6B005617A9 /* ImageCropPicker.swift in Sources */,
 				2B06831B2608C3FC007849F2 /* CustomMapView.swift in Sources */,
 				2B342CD32601567D002963D6 /* SFSymbolsButton.swift in Sources */,
+				AA000001000000020000AA01 /* CornerAnnotation.swift in Sources */,
+				AA000001000000020000AA02 /* CornerAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +421,7 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Hike Overlay";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +449,7 @@
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Hike Overlay";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
